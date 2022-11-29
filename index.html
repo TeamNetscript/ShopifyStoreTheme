@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopify Theme</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
+</head>
+<body>
+	<!-- top bar section start -->
+	<section class="top-bar">
+		<div class="container-full">
+			<div class="main-div">
+				<div class="icons text-left">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="notification">
+					<p><b>Free shipping</b> On all orders over $100</p>
+				</div>
+				<div class="currency text-right">
+					<form>
+						<label>
+							<select>
+								<option>USD</option>
+								<option>INR</option>
+								<option>GBP</option>
+								<option>EUR</option>
+							</select>
+						</label>
+						<label>
+							<select>
+								<option>IN</option>
+								<option>US</option>
+								<option>AU</option>
+							</select>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- top bar section end -->
+	<!-- header 1 starts here header_standred -->
+	<header class="header_standred">
+		<div class="main-background-green main-div">
+			<div class="container-full">
+				<div class="main-div">
+					<div class="mobile_logo">
+						<button type="button" class="mobile_logo_button" id="hamButtton"><i class="fa fa-bars"></i></button>
+					</div>
+					<div class="logo text-left">
+						<a href="index.html"><img src="images/logo.png" alt=""></a>
+					</div>
+					<div class="search-bar text-center">
+						<form>
+							<label>
+								<input type="text" name="" placeholder="search products">
+								<button type="submit"><i class="fa fa-search"></i> </button>
+							</label>
+						</form>
+					</div>
+					<div class="header-cart text-right">
+						<ul>
+							<li>
+								<span>5</span>
+								<a href="javascript:;" id="mySavebtn"><i class="fa fa-heart"></i></a>
+								<!-- Liked procuts Modal -->
+								<div id="mySave" class="saveDrawer">
+								  	<div class="saveDrawer_Content">
+									    <div class="save-header">
+									      <b class="saveClose">&times;</b>
+									      <h2>Saved products</h2>
+									    </div>
+									    <!-- cart body content -->
+									    <div class="savedrawer_Body"> 
+									      	<div class="saveDrawer_Items">
+										      	<div class="savwItem_Wrapper"> 
+										      		<div class="saveItem">
+										      			<div class="saveItem_Image">
+										      				<img src="images/model1.png" alt="" />
+										      			</div>
+										      			<div class="saveItem_Info text-left">
+										      				<a class="title-link">Charlotte Dress</a>
+										      				<p>Light denim blue / M</p>
+										      				<h4 class="price">$89.90</h4>
+										      				<a href="#">remove</a>
+										      			</div>
+										      		</div>
+										      		<div class="saveItem">
+										      			<div class="saveItem_Image">
+										      				<img src="images/model2.png" alt="" />
+										      			</div>
+										      			<div class="saveItem_Info text-left">
+										      				<h3>Charlotte Dress</h3>
+										      				<p>Light denim blue / M</p>
+										      				<h4 class="price">$89.90</h4>
+										      				<a href="#">remove</a>
+										      			</div>
+										      		</div>
+										      	</div>
+									      	</div>
+									      	<!-- cart items -->
+									    </div>
+								  	</div>
+								</div>
+								<!-- Liked procuts Modal end -->
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-user"></i><b>Admin</b> </a>
+							</li>
+							<li>
+								<span>7</span>
+								<a href="javascript:;" id="myBtn"><i class="fa fa-shopping-cart"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header_standred nav_standred">
+		<div class="main-light-background nav-bar">
+			<div class="container-full">
+				<div class="main-div">
+					<nav class="desktop_nav"> 
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Shop</a></li> 
+							<li><a href="about.html">About</a></li>
+							<li>
+								<a href="javascript:;" class="nav_drop_open dropdown-toggle_desktop">Collections <i class="fa fa-angle-down"></i></a>
+								<div class="nav_drop dropdown-desktop">
+									<div class="nav_Drop_Wrapper">
+										<div class="nav_Drop_Link">
+											<img src="images/submenu1.png">
+											<h3>Categories</h3>
+											<ul>
+												<li><a href="collection.html">Dresses</a></li>
+												<li><a href="#">Bestsellers</a></li>
+												<li><a href="#">About</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu2.png">
+											<h3>Dresses</h3>
+											<ul>
+												<li><a href="www.google.com">Brooklyn Top</a></li>
+												<li><a href="#">Thalia Dress</a></li>
+												<li><a href="#">Charlotte Dress</a></li>
+												<li><a href="#">Playsuits & Jumpsuits</a></li>
+												<li><a href="#">Sale</a></li>
+												<li><a href="#">Tops</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu1.png">
+											<h3>Thalia Dress</h3>
+											<ul>
+												<li><a href="www.google.com">Dresses</a></li>
+												<li><a href="#">Bestsellers</a></li>
+												<li><a href="#">About</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu2.png">
+											<h3>Bestsellers</h3>
+											<ul>
+												<li><a href="www.google.com">Brooklyn Top</a></li>
+												<li><a href="#">Thalia Dress</a></li>
+												<li><a href="#">Charlotte Dress</a></li>
+												<li><a href="#">Playsuits & Jumpsuits</a></li>
+												<li><a href="#">Sale</a></li>
+												<li><a href="#">Tops</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#" class="nav_drop_open dropdown-toggle_desktop">Bestsellers <i class="fa fa-angle-down"></i></a>
+								<div class="nav_drop dropdown-desktop">
+									<div class="nav_Drop_Wrapper">
+										<div class="nav_Drop_Link">
+											<img src="images/submenu1.png">
+											<h3>Thalia Dress</h3>
+											<ul>
+												<li><a href="www.google.com">Brooklyn Top</a></li>
+												<li><a href="#">Thalia Dress</a></li>
+												<li><a href="#">Charlotte Dress</a></li>
+												<li><a href="#">Playsuits & Jumpsuits</a></li>
+												<li><a href="#">Sale</a></li>
+												<li><a href="#">Tops</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu1.png">
+											<h3>Bestsellers</h3>
+											<ul>
+												<li><a href="www.google.com">Dresses</a></li>
+												<li><a href="#">Bestsellers</a></li>
+												<li><a href="#">About</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu2.png">
+											<h3>Dresses</h3>
+											<ul>
+												<li><a href="www.google.com">Brooklyn Top</a></li>
+												<li><a href="#">Thalia Dress</a></li>
+												<li><a href="#">Charlotte Dress</a></li>
+												<li><a href="#">Playsuits & Jumpsuits</a></li>
+												<li><a href="#">Sale</a></li>
+												<li><a href="#">Tops</a></li>
+											</ul>
+										</div>
+										<div class="nav_Drop_Link">
+											<img src="images/submenu1.png">
+											<h3>About</h3>
+											<ul>
+												<li><a href="www.google.com">Dresses</a></li>
+												<li><a href="#">Bestsellers</a></li>
+												<li><a href="#">About</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="icons text-left">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</nav>
+					<nav class="mobile_nav" id="mobileNav"> 
+						<div class="mobile_nav_content">
+							<div class="nav-header">
+						      <span class="close_nav">&times;</span>
+						      <img src="images/logo-black.png" alt="">
+						    </div>
+							<ul>
+								<li class="appear-animation appear-delay-2"><a href="index.html">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="about.html">About</a></li>
+								<li>
+									<a href="javascript:;" class="nav_drop_open dropdown-toggle">Collections <i class="fa fa-angle-down"></i></a>
+									<div class="nav_drop dropdown">
+										<div class="nav_Drop_Wrapper">
+											<div class="nav_Drop_Link"> 
+												<ul>
+													<li><a href="#"> Dresses</a></li>
+													<li><a href="#"> Bestsellers</a></li>
+													<li><a href="#"> About</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link"> 
+												<ul>
+													<li><a href="#"> Brooklyn Top</a></li>
+													<li><a href="#"> Thalia Dress</a></li>
+													<li><a href="#"> Charlotte Dress</a></li>
+													<li><a href="#"> Playsuits & Jumpsuits</a></li>
+													<li><a href="#"> Sale</a></li>
+													<li><a href="#"> Tops</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link">  
+												<ul>
+													<li><a href="#"> Dresses</a></li>
+													<li><a href="#"> Bestsellers</a></li>
+													<li><a href="#"> About</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link">  
+												<ul>
+													<li><a href="#"> Brooklyn Top</a></li>
+													<li><a href="#"> Thalia Dress</a></li>
+													<li><a href="#"> Charlotte Dress</a></li>
+													<li><a href="#"> Playsuits & Jumpsuits</a></li>
+													<li><a href="#"> Sale</a></li>
+													<li><a href="#"> Tops</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="#" class="nav_drop_open dropdown-toggle">Bestsellers <i class="fa fa-angle-down"></i></a>
+									<div class="nav_drop dropdown">
+										<div class="nav_Drop_Wrapper">
+											<div class="nav_Drop_Link">
+												<ul>
+													<li><a href="www.google.com">Brooklyn Top</a></li>
+													<li><a href="#">Thalia Dress</a></li>
+													<li><a href="#">Charlotte Dress</a></li>
+													<li><a href="#">Playsuits & Jumpsuits</a></li>
+													<li><a href="#">Sale</a></li>
+													<li><a href="#">Tops</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link">
+												<ul>
+													<li><a href="www.google.com">Dresses</a></li>
+													<li><a href="#">Bestsellers</a></li>
+													<li><a href="#">About</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link">
+												<ul>
+													<li><a href="www.google.com">Brooklyn Top</a></li>
+													<li><a href="#">Thalia Dress</a></li>
+													<li><a href="#">Charlotte Dress</a></li>
+													<li><a href="#">Playsuits & Jumpsuits</a></li>
+													<li><a href="#">Sale</a></li>
+													<li><a href="#">Tops</a></li>
+												</ul>
+											</div>
+											<div class="nav_Drop_Link">
+												<ul>
+													<li><a href="www.google.com">Dresses</a></li>
+													<li><a href="#">Bestsellers</a></li>
+													<li><a href="#">About</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="icons text-left">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="hero_section">
+			<div class="hero_slider"> 
+			  	<div class="slider-overlay">
+			  		<img src="images/slider2.jpg">
+			  		<div class="slider_container">
+			  			<div class="slider_content">
+				  			<p>Quality pieces that you'll pass down for generations.</p>
+				  			<h2>Premium activewear dedicated to creating chic and effortlessly sets</h2>
+				  			<ul>
+				  				<li>
+				  					<a href="#" class="gLink_round">Shop</a>
+				  				</li>
+				  				<li>
+				  					<a href="#" class="wLink_round">View product</a>
+				  				</li>
+				  			</ul>
+				  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="slider-overlay">
+			  		<img src="images/slider1.jpg">
+			  		<div class="slider_container">
+			  			<div class="slider_content">
+				  			<p>Quality pieces that you'll pass down for generations.</p>
+				  			<h2>Premium activewear dedicated to creating chic and effortlessly sets</h2>
+				  			<ul>
+				  				<li>
+				  					<a href="#" class="gLink_round">Shop</a>
+				  				</li>
+				  				<li>
+				  					<a href="#" class="wLink_round">View product</a>
+				  				</li>
+				  			</ul>
+				  		</div>
+			  		</div>
+			  	</div>
+			</div>
+		</section>
+		<!-- Featured products -->
+		<section class="featured-Products">
+			<div class="main-div">
+				<div class="container">
+					<h2 class="title">Featured Products</h2>
+					<div class="featured-Products_slides">
+						<div class="featured-item_list">
+							<div>
+								<div class="featured-product__content">
+									<a href="#">
+										<div class="featured-image_content">
+											<div class="featured-image overlay">
+												<img src="images/model1.png">
+											</div>
+											<div class="featured-quick">
+												<button type="button">Quick Shop</button>
+											</div>
+										</div>
+										<div class="featured-title_content">
+											<a href="">
+												<h2 class="featured-title">Charlotte Dress</h2>
+											</a>
+										</div>
+										<h3 class="price">$89.99</h3>
+									</a>
+									<div class="featured-swaches">
+										<ul>
+											<li><a href="#"><img src="images/model2.png"></a></li>
+											<li><a href="#"><img src="images/model3.png"></a></li>
+											<li><a href="#"><img src="images/model1.png"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="featured-product__content">
+									<a href="#">
+										<div class="featured-image_content">
+											<div class="featured-image overlay">
+												<img src="images/model2.png">
+											</div>
+											<div class="featured-quick">
+												<button type="button">Quick Shop</button>
+											</div>
+										</div>
+										<div class="featured-title_content">
+											<a href="">
+												<h2 class="featured-title">Charlotte Dress</h2>
+											</a>
+										</div>
+										<h3 class="price">$89.99</h3>
+									</a>
+									<div class="featured-swaches">
+										<ul>
+											<li><a href="#"><img src="images/model2.png"></a></li>
+											<li><a href="#"><img src="images/model3.png"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="featured-product__content">
+									<a href="#">
+										<div class="featured-image_content">
+											<div class="featured-image overlay">
+												<img src="images/model3.png">
+											</div>
+											<div class="featured-quick">
+												<button type="button">Quick Shop</button>
+											</div>
+										</div>
+										<div class="featured-title_content">
+											<a href="">
+												<h2 class="featured-title">Charlotte Dress</h2>
+											</a>
+										</div>
+										<h3 class="price">$89.99</h3>
+									</a>
+									<div class="featured-swaches">
+										<ul>
+											<li><a href="#"><img src="images/model2.png"></a></li>
+											<li><a href="#"><img src="images/model3.png"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="featured-product__content">
+									<a href="#">
+										<div class="featured-image_content">
+											<div class="featured-image overlay">
+												<img src="images/model4.png">
+											</div>
+											<div class="featured-quick">
+												<button type="button">Quick Shop</button>
+											</div>
+										</div>
+										<div class="featured-title_content">
+											<a href="">
+												<h2 class="featured-title">Charlotte Dress</h2>
+											</a>
+										</div>
+										<h3 class="price">$89.99</h3>
+									</a>
+									<div class="featured-swaches">
+										<ul>
+											<li><a href="#"><img src="images/model2.png"></a></li>
+											<li><a href="#"><img src="images/model3.png"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="featured-product__content">
+									<a href="#">
+										<div class="featured-image_content">
+											<div class="featured-image overlay">
+												<img src="images/model2.png">
+											</div>
+											<div class="featured-quick">
+												<button type="button">Quick Shop</button>
+											</div>
+										</div>
+										<div class="featured-title_content">
+											<a href="">
+												<h2 class="featured-title">Charlotte Dress</h2>
+											</a>
+										</div>
+										<h3 class="price">$89.99</h3>
+									</a>
+									<div class="featured-swaches">
+										<ul>
+											<li><a href="#"><img src="images/model2.png"></a></li>
+											<li><a href="#"><img src="images/model3.png"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="featured-link">Explore all Fresh Arrivals</a>
+				</div>
+			</div>
+		</section>
+		<!-- Featured banner -->
+		<section class="featured-banner">
+			<div class="featured-banner_content">
+				<div class="featured-banner_item">
+					<div class="image-wrapper">
+						<img src="images/banner1.png" alt="">
+					</div> 
+					<div class="banner-content">
+						<h2>What's New</h2>
+						<p>A collection of our latest arrivals</p>
+						<button type="button" class="aLink">Shop Now</button>
+					</div> 
+				</div>
+				<div class="featured-banner_item">
+					<div class="image-wrapper">
+						<img src="images/banner2.png" alt="">
+					</div>
+					<div class="banner-content">
+						<h2>Dresses</h2>
+						<p>A collection of our latest arrivals</p>
+						<button type="button" class="aLink">Shop Now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Featured collections -->
+		<section class="featured-collection">
+			<div class="container">
+				<div class="main-div">
+					<h2 class="title">Shop by Collection</h2>
+				</div>
+				<div class="featured-collection_wrapper">
+					<div class="collection-items">
+						<div class="collection-items_image">
+							<div class="item-image overlay">
+								<img src="images/collection2.png">
+							</div>
+							<div class="item_link">
+								<button type="button" class="aLink">View Products</button>
+							</div>
+						</div>
+						<div class="collection-items_content">
+							<h2><a href="#">Playsuits & Jumpsuits</a></h2>
+							<p>25 items</p>
+						</div>
+					</div>
+					<div class="collection-items">
+						<div class="collection-items_image">
+							<div class="item-image overlay">
+								<img src="images/collection3.png">
+							</div>
+							<div class="item_link">
+								<button type="button" class="aLink">View Products</button>
+							</div>
+						</div>
+						<div class="collection-items_content">
+							<h2><a href="#">Dresses</a></h2>
+							<p>25 items</p>
+						</div>
+					</div>
+					<div class="collection-items">
+						<div class="collection-items_image">
+							<div class="item-image overlay">
+								<img src="images/collection4.png">
+							</div>
+							<div class="item_link">
+								<button type="button" class="aLink">View Products</button>
+							</div>
+						</div>
+						<div class="collection-items_content">
+							<h2><a href="#">Sale</a></h2>
+							<p>25 items</p>
+						</div>
+					</div>
+					<div class="collection-items">
+						<div class="collection-items_image">
+							<div class="item-image overlay">
+								<img src="images/collection1.png">
+							</div>
+							<div class="item_link">
+								<button type="button" class="aLink">View Products</button>
+							</div>
+						</div>
+						<div class="collection-items_content">
+							<h2><a href="#">Tops</a></h2>
+							<p>25 items</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- promotion -->
+		<section class="promotion">
+			<div class="container">
+				<div class="promo-wrapper">
+					<div class="promo-image">
+						<img src="images/promoimg.png">
+						<div class="promo-tip">
+							<div class="promo-tip_content">
+								<div class="image">
+									<img src="images/promo2.png" alt="">
+								</div>
+								<div class="product-details">
+									<h2><a href="#">Playsuits & Jumpsuits</a></h2>
+									<p>$29.99</p>
+									<a href="#">view product</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo-content">
+						<div class="promo-content_sec">
+							<h2>Searching for effortless partywear? Look no further.</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passag.</p>
+						</div>
+						<div class="promo-products">
+							<div class="promo-products_discount">
+								<h2>15<sub>%</sub></h2>
+								<p>On partywear</p>
+							</div>
+							<ul>
+								<li><a href="#"><img src="images/promo2.png" alt=""></a></li>
+								<li><a href="#"><img src="images/promo1.png" alt=""></a></li>
+								<li><a href="#"><img src="images/promo2.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Free shipping -->
+		<section class="free-shipping">
+			<div class="container">
+				<div class="free-shipping_content">
+					<h2>FREE SHIPPING + RETURNS</h2>
+					<p>Shop in confidence with our free shipping and <a href="#">free returns promise!</a><span>Products available to purchase via Runway Scout who allowed the usage of their catalog for this demo.</span></p>
+					<p class="pt-1">Explore the <a href="#">theme features.</a></p>
+				</div>
+			</div>
+		</section>
+		<!-- Product detail -->
+		<section class="product-detail">
+			<div class="container">
+				<div class="product-details_wrapper">
+					<div class="product-details_image">
+						<div class="product-image_carousal">
+							<div>
+								<img src="images/model1.png" alt="">
+							</div>
+							<div>
+								<img src="images/model2.png" alt="">
+							</div>
+							<div>
+								<img src="images/model3.png" alt="">
+							</div>
+							<div>
+								<img src="images/model1.png" alt="">
+							</div>
+							<div>
+								<img src="images/model2.png" alt="">
+							</div>
+							<div>
+								<img src="images/model3.png" alt="">
+							</div>
+						</div>
+						<div class="product-image_nav">
+							<div>
+								<img src="images/model1.png" alt="">
+							</div>
+							<div>
+								<img src="images/model2.png" alt="">
+							</div>
+							<div>
+								<img src="images/model3.png" alt="">
+							</div>
+							<div>
+								<img src="images/model1.png" alt="">
+							</div>
+							<div>
+								<img src="images/model2.png" alt="">
+							</div>
+							<div>
+								<img src="images/model3.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="product-details_content">
+						<h2 class="title">Keep in Mind Playsuit</h2>
+						<div class="price-detail">
+							<h3 class="price">$79.00</h3>
+							<div class="review">
+								<ul>
+									<li><img src="images/star-gold.svg"></li>
+									<li><img src="images/star-gold.svg"></li>
+									<li><img src="images/star-gold.svg"></li>
+									<li><img src="images/star-gold.svg"></li>
+									<li><img src="images/grey_star.svg"></li>
+								</ul>
+								<p>See Latest <a href="#">reviews</a></p>
+							</div>
+						</div>
+						<form>
+							<div class="color">
+								<h3 class="subtitle">Color</h3>
+								<ul class="swatches">
+									<li class="swatches-label"><a href="#"><img src="images/testimonial.png" alt=""/></a></li>
+									<li class="swatches-label"><a href="#"><img src="images/testimonial.png" alt=""/></a></li>
+									<li class="swatches-label"><a href="#"><img src="images/testimonial.png" alt=""/></a></li>
+									<li class="swatches-label"><a href="#"><img src="images/testimonial.png" alt=""/></a></li>
+								</ul>
+							</div>
+							<div class="size">
+								<h3 class="subtitle">Size</h3>
+								<div class="size-content">
+									<ul class="size-wrapper">
+										<li class="size-label active"><a href="#">S</a></li>
+										<li class="size-label"><a href="#">M</a></li>
+										<li class="size-label"><a href="#">L</a></li>
+										<li class="size-label"><a href="#">XL</a></li>
+									</ul>
+									<a href="#" class="size-check">Check your size here</a>
+								</div>
+							</div>
+							<div class="quantity">
+								<h3 class="subtitle">Quantity</h3>
+								<div class="productQuantity">
+			      					<button type="button"><i class="fa fa-minus" aria-hidden="true"></i></button>
+			      					<input type="text" name="" placeholder="1">
+			      					<button type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+			      				</div>
+							</div>
+							<div class="free-delivery">
+								<div class="free-delivery_content">
+									<p><img src="images/delivery-truck.png" alt=""> Free delivery & returns</p>
+								</div>
+								<div class="product-left">
+									<p> Only 2 left!</p>
+								</div>
+							</div>
+							<div class="buy-wrapper">
+								<div class="add-cart">
+									<button type="button">Add to cart</button>
+								</div>
+								<div class="buy-now">
+									<button type="button">Buy it now</button>
+								</div>
+							</div>
+						</form>
+						<div class="detail-content mt-2">
+							<button class="accordion">Description</button>
+							<div class="panel">
+							  <div class="panel-content">
+							  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							  	<ul>
+							  		<li>Loose fit</li>
+							  		<li>Side pockets</li>
+							  		<li>Elasticised and drawstring waist</li>
+							  		<li>Unlined</li>
+							  	</ul>
+							  </div>
+							</div>
+
+							<button class="accordion">Shipping information</button>
+							<div class="panel">
+							  <div class="panel-content">
+							  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							  	<ul>
+							  		<li>Loose fit</li>
+							  		<li>Side pockets</li>
+							  		<li>Elasticised and drawstring waist</li>
+							  		<li>Unlined</li>
+							  	</ul>
+							  </div>
+							</div>
+
+							<button class="accordion">Ask a question</button>
+							<div class="panel">
+								<div class="panel-content">
+								  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								  	<ul>
+								  		<li>Loose fit</li>
+								  		<li>Side pockets</li>
+								  		<li>Elasticised and drawstring waist</li>
+								  		<li>Unlined</li>
+								  	</ul>
+								  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Brand logo -->
+		<section class="brand-logo">
+			<div class="container">
+				<div class="brand-logo_items">
+					<div class="brand-item">
+						<img src="images/brand1.png" alt="">
+					</div>
+					<div class="brand-item">
+						<img src="images/brand2.png" alt="">
+					</div>
+					<div class="brand-item">
+						<img src="images/brand3.png" alt="">
+					</div>
+					<div class="brand-item">
+						<img src="images/brand4.png" alt="">
+					</div>
+					<div class="brand-item">
+						<img src="images/brand5.png" alt="">
+					</div>
+					<div class="brand-item">
+						<img src="images/brand2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Newsletter -->
+		<section class="newsletter">
+			<div class="container">
+				<div class="newsletter-wrapper">
+					<div class="newsletter-content">
+						<h2>GET IN THE KNOW</h2>
+						<p>Signup for our newsletter to stay up to date on sales and events.</p>
+					</div>
+					<div class="newsletter-content">
+						<form>
+							<label>
+								<input type="text" name="" placeholder="Enter Your Email Address">
+								<button type="submit">Join</button>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonial -->
+		<section class="testimonial">
+			<div class="container">
+				<div class="testimonial-wrapper">
+					<div class="testimonial-title">
+						<h2 class="title">Customer Testimonials</h2>
+						<p>Read what our customers say.</p>
+					</div>
+					<div class="testimonial-content">
+						<div class="testimonial-items">
+							<div class="review">
+								<div class="profile">
+									<img src="images/testimonial.png" alt="">
+								</div>
+								<div class="review-star">
+									<ul>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/grey_star.svg"></li>
+									</ul>
+									<h3 class="name">Eleanor S.</h3>
+								</div>
+							</div>
+							<h4>Grace Dress, very confortable</h4>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p>
+						</div>
+						<div class="testimonial-items">
+							<div class="review">
+								<div class="profile">
+									<img src="images/testimonial.png" alt="">
+								</div>
+								<div class="review-star">
+									<ul>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/grey_star.svg"></li>
+									</ul>
+									<h3 class="name">Eleanor S.</h3>
+								</div>
+							</div>
+							<h4>Grace Dress, very confortable</h4>
+							<p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p></p>
+						</div>
+						<div class="testimonial-items">
+							<div class="review">
+								<div class="profile">
+									<img src="images/testimonial.png" alt="">
+								</div>
+								<div class="review-star">
+									<ul>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/grey_star.svg"></li>
+									</ul>
+									<h3 class="name">Eleanor S.</h3>
+								</div>
+							</div>
+							<h4>Grace Dress, very confortable</h4>
+							<p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p></p>
+						</div>
+						<div class="testimonial-items">
+							<div class="review">
+								<div class="profile">
+									<img src="images/testimonial.png" alt="">
+								</div>
+								<div class="review-star">
+									<ul>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/grey_star.svg"></li>
+									</ul>
+									<h3 class="name">Eleanor S.</h3>
+								</div>
+							</div>
+							<h4>Grace Dress, very confortable</h4>
+							<p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p></p>
+						</div>
+						<div class="testimonial-items">
+							<div class="review">
+								<div class="profile">
+									<img src="images/testimonial.png" alt="">
+								</div>
+								<div class="review-star">
+									<ul>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/star-gold.svg"></li>
+										<li><img src="images/grey_star.svg"></li>
+									</ul>
+									<h3 class="name">Eleanor S.</h3>
+								</div>
+							</div>
+							<h4>Grace Dress, very confortable</h4>
+							<p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore...</p></p>
+						</div>
+					</div>
+					<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				    	<span class="slider__label sr-only"></span>
+				  	</div>
+				</div>
+			</div>
+		</section>
+		<!-- Add section -->
+		<section class="add-section">
+			<div class="container">
+				<div class="add-section_wrapper">
+					<div class="add-section_items">
+						<img src="images/icon2.png" alt="">
+						<h2>Free Shipping</h2>
+					</div>
+					<div class="add-section_items">
+						<img src="images/icon4.png" alt="">
+						<h2>New Styles</h2>
+					</div>
+					<div class="add-section_items">
+						<img src="images/icon3.png" alt="">
+						<h2>Gift cards</h2>
+					</div>
+					<div class="add-section_items">
+						<img src="images/icon1.png" alt="">
+						<h2>5.0 Trustpilot rating</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- footer  -->
+	<footer>
+		<div class="container">
+			<div class="main-div">
+				<div class="footer-item">
+					<h1>Company Name</h1>
+					<p>They designed the store with the female in mind. A warm environment where instead of feeling self-conscious she feels secure in her own body, not limited by age, size or shape, that fits and feels good.</p>
+					<p>Best Swimwear is a bikini boutique, in sunny Hermosa Beach, California.</p>
+				</div>
+				<div class="footer-item">
+					<div class="main-div">
+						<div class="footer-item_nav">
+							<h3>About</h3>
+							<ul class="footer-item-toggle">
+								<li><a href="#">Our blog</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Search</a></li>
+							</ul>
+						</div>
+						<div class="footer-item_nav">
+							<h3>Shop</h3>
+							<ul class="footer-item-toggle">
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Search</a></li>
+								<li><a href="#">Our blog</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Search</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<h2>Join our email list!</h2>
+					<form>
+						<label>
+							<input type="text" name="" placeholder="Email">
+						</label>
+						<label>
+							<button type="button" class="buttonSubmit">Subscribe</button>
+						</label>
+					</form>
+					<a href="#" class="italic">By completing this form you are signing up to receive. Best Swimwear is a bikini boutique, in sunny Hermosa Beach, California.</a>
+				</div>
+			</div>
+			<div class="main-div copyrights">
+				<div class="footer-item_copyright">
+					<p>&copy; CopyRights | Company Name</p>
+				</div>
+				<div class="footer-item_copyright text-right">
+					<a href="#"><img src="images/payment.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- header 1 end here -->
+	<!-- Cart Modal -->
+	<div id="myCart" class="cartDrawer">
+	  	<div class="cartDrawer_Content">
+		    <div class="cart-header">
+		      <span class="close">&times;</span>
+		      <h2>Your Cart</h2>
+		    </div>
+		    <!-- cart body content -->
+		    <div class="drawer_Body">
+		      	<div class="drawer_Empty">
+		      		<h3 class="title">YOUR CART IS EMPTY</h3>
+			      	<p>Not sure where to start?</p>
+			      	<p>Try these collections:</p>
+			      	<ul>
+			      		<li>
+			      			<a href="#" class="aLink">Collections</a>
+			      		</li>
+			      	</ul>
+		      	</div>
+		      	<!-- cart items -->
+		      	<div class="cartDrawer_Items">
+			      	<div class="cartItem_Wrapper">
+			      		<div class="cartItem">
+			      			<div class="cartItem_Image">
+			      				<img src="images/model3.png" alt="" />
+			      			</div>
+			      			<div class="cartItem_Info text-left">
+			      				<h3>Charlotte Dress</h3>
+			      				<p>Light denim blue / XS</p>
+			      				<h4 class="price">$89.90</h4>
+			      				<div class="cartQuantity">
+			      					<button type="button"><i class="fa fa-minus"></i></button>
+			      					<input type="text" name="" placeholder="1">
+			      					<button type="button"><i class="fa fa-plus"></i></button>
+			      				</div>
+			      				<a href="#">remove</a>
+			      			</div>
+			      		</div>
+			      		<div class="cartItem">
+			      			<div class="cartItem_Image">
+			      				<img src="images/model1.png" alt="" />
+			      			</div>
+			      			<div class="cartItem_Info text-left">
+			      				<h3>Charlotte Dress</h3>
+			      				<p>Light denim blue / M</p>
+			      				<h4 class="price">$89.90</h4>
+			      				<div class="cartQuantity">
+			      					<button type="button"><i class="fa fa-minus"></i></button>
+			      					<input type="text" name="" placeholder="1">
+			      					<button type="button"><i class="fa fa-plus"></i></button>
+			      				</div>
+			      				<a href="#">remove</a>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+		      	<!-- cart items -->
+		    </div>
+		    <div class="cart_Footer">
+	      		<div class="cart_Total text-left">
+	      			<span>Total:</span>
+	      			<span class="total_Price"> $250.90</span>
+	      		</div>
+	      		<p>Taxes and <a href="#">shipping</a> calculated at checkout</p>
+	      		<a href="#" class="aLink_border">View cart</a>
+	      		<button type="button" class="aLink">Checkout</button>
+	      	</div>
+	  	</div>
+	</div>
+	<!-- Cart Modal end -->
+	<script src="https://kit.fontawesome.com/b2d4c904fc.js" crossorigin="anonymous"></script> 
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*global classes*/
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.main-background-green{
+  background-color: #05595B;
+}
+.main-light-background{
+  background-color: #E7F6F2;
+}
+.title{
+  font-size: 24px;
+  padding: 0px 0px 10px 0px;
+}
+.italic{
+  font-style: italic;
+}
+.pt-1{
+  padding-top: 10px;
+}
+.pt-5{
+  padding-top: 50px;
+}
+.pt-3{
+  padding-top: 30px;
+}
+.pt-2{
+  padding-top: 20px;
+}
+.subtitle{
+  color: $black-color;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.mt-1{
+  margin-top: 10px;
+}
+.mt-2{
+  margin-top: 20px;
+}
+.mb-1{
+  margin-bottom: 10px;
+}

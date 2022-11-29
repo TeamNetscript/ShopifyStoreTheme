@@ -1,0 +1,25 @@
+/*Color  theme*/
+/*mixin*/
+@-webkit-keyframes animatedown {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatedown {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 10;
+    opacity: 1;
+  }
+}
+/*media query breakpoint*/
+
+/*# sourceMappingURL=color-theme.css.map */

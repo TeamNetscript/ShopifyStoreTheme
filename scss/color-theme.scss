@@ -1,0 +1,225 @@
+/*Color  theme*/
+$primary-green: #05595B;
+$primary-green-light: #E7F6F2;
+$primary-text-grey: #787878;
+$primary-darkgrey-background:#313131;
+$white-color: #fff;
+$black-color: #000;
+$white-background: #fff;
+$black-background: #000;
+$primary-green-background: #05595B;
+$text-color: #6e6e6e;
+$yellow: #E2D784;
+$footerText: #DCDCDC;
+$body-color: #F0F0F0;
+$price: #202020;
+$newsletter-background: #313131;
+ 
+/*mixin*/
+@mixin container{
+	position:  relative;
+	max-width:  1330px;
+	margin:  0 auto;
+	display:  flex;
+	flex-direction: column;
+	width: 90%;
+}
+@mixin container-faq{
+	position:  relative;
+	max-width:  1050px;
+	margin:  0 auto;
+	display:  flex;
+	flex-direction: column;
+	width: 90%;
+}
+@mixin container-full{
+	position:  relative;
+	max-width:  90%;
+	width:  90%;
+	margin:  0 auto;
+	display:  flex;
+	flex-direction: column;
+}
+@mixin main-div{
+	position:  relative;
+	display:  flex;
+	width:  100%;
+	height:  auto;
+}
+@mixin main-div-content{
+	position:  relative;
+	display:  flex;
+	width:  100%;
+	height:  auto;
+	overflow:  hidden;
+}
+@mixin aLink{
+	font-size: 16px;
+	color: #fff;
+	background-color: $primary-green;
+	padding: 10px 25px;
+	border: 1px solid $primary-green;
+	font-weight: 500;
+	width: auto; 
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	transform-origin: left top;
+
+	&:hover{
+		color: $primary-green;
+		border: 1px solid #fff;
+		background-color: $white-background;
+	}
+}
+@mixin aLink-light{
+	font-size: 16px;
+	color: $black-color;
+	background-color: $primary-green-light;
+	min-height: 45px;
+	padding: 10px 15px;
+	border: 1px solid $primary-green-light;
+	font-weight: 500;
+	width: 100%;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+
+	&:hover{
+		border: 1px solid $primary-green;
+		color: $primary-green;
+		background-color: $white-background;
+	}
+}
+@mixin title-link{
+	position: relative;
+	display: block;
+	font-size: 18px;
+	color: #000;
+	border: 0px;
+}
+@mixin aLink_border{
+  font-size: 14px;
+  color: $primary-green;
+  background-color: $white-background;
+  min-height: 45px;
+  padding: 10px 25px;
+  border: 1px solid $primary-green;
+  font-weight: 500;
+  width: 100%;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    border: 1px solid $primary-green;
+    color: #fff;
+    background-color: $primary-green;
+  }
+}
+ @-webkit-keyframes animatedown {
+  from {top: 0px; opacity:0} 
+  to {top:0; opacity:1}
+} 
+@keyframes animatedown {
+  from {top: 00px; opacity:0}
+  to {top: 10; opacity:1}
+}
+
+@mixin gLink_round{
+	position: relative;
+  font-size: 16px;
+  color: $white-color;
+  background-color: $primary-green;
+  padding: 15px 25px;
+  border: 1px solid $primary-green;
+  font-weight: 500;
+  width: 100%;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 250px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 150px;
+
+  @media (max-width: $breakpoint-tabs){
+  	padding: 15px 15px;
+  }
+  @media (max-width: $breakpoint-mobile_small){
+  	padding: 10px;
+  	min-width: 100px;
+  }
+
+	&:hover{
+		border: 1px solid $primary-green;
+		color: $primary-green;
+		background-color: $white-background;
+	}
+}
+@mixin wLink_round{
+	position: relative;
+  font-size: 16px;
+  color: $primary-green;
+  background-color: $white-background;
+  padding: 15px 25px;
+  border: 1px solid $white-color;
+  font-weight: 500;
+  width: 100%;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 250px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 150px;
+
+  @media (max-width: $breakpoint-tabs){
+  	padding: 15px 15px;
+  }
+  @media (max-width: $breakpoint-mobile_small){
+  	padding: 10px 20px;
+  	min-width: 100px;
+  }
+
+	&:hover{
+		border: 1px solid $primary-green;
+		color: $white-color;
+		background-color: $primary-green;
+	}
+}
+@mixin buttonSubmit{
+	font-size: 14px;
+	color: #fff;
+	background-color: #05595B;
+	min-height: 45px;
+	padding: 10px 25px;
+	border: 1px solid #05595B;
+	font-weight: 500;
+	width: 100%;
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+
+	&:hover{
+		border: 1px solid $primary-green;
+		color: $primary-green;
+		background-color: $white-background;
+	}
+}
+
+/*media query breakpoint*/
+$breakpoint-laptop: 1440px;
+$breakpoint-tabplus: 1024px;
+$breakpoint-tabs: 768px;
+$breakpoint-mobile_landscape: 640px;
+$breakpoint-mobile: 767px;
+$breakpoint-mobile_small : 425px;
