@@ -726,7 +726,7 @@ body {
         }
       }
       .search-bar{
-        flex:  40%;
+        flex:  30%;
         text-align: center;
 
         @media (max-width: $breakpoint-tabs){
@@ -980,6 +980,60 @@ body {
           } 
         } 
       }
+      .header-cart {
+        flex:  30%;
+
+        @media (max-width: $breakpoint-tabs){
+          .d_none{
+            display: none;
+          }
+        }
+
+        ul {
+          @include main-div;
+          align-items: right;
+          justify-content: flex-end;
+
+          li{
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+
+            span{
+              position: absolute;
+              top: -15px;
+              right: -10px;
+              color: #000;
+              background-color: #E2D784;
+              padding: 5px;
+              border-radius: 50px;
+              height: 10px;
+              width: 10px;
+              font-size: 12px;
+              text-align: center;
+            }
+
+            a{
+              color:  $white-color;
+              text-decoration: none;
+
+              b{
+                font-weight: 400;
+                padding-left: 5px;
+
+                @media (max-width:  $breakpoint-tabs){
+                  display: none;
+                }
+              }
+
+              i{
+                color:  $white-color;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
       .desktop_nav{
         @include main-div;
 
@@ -1013,8 +1067,8 @@ body {
               padding: 0px 5px;
             } 
             a{
-              color: #000;
-              padding: 30px 15px;
+              color: #fff;
+              padding: 30px 5px;
               position: relative;
               display: block;
 
@@ -1149,153 +1203,6 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    .mobile_logo{
-      flex: 30%;
-      display: none;
-
-      @media( max-width:  $breakpoint-tabs){
-        display: block;
-      }
-
-      button{
-        background-color: transparent;
-        border: 0px;
-
-        i{
-          color:  #fff;
-          font-size: 24px;
-        }
-      }
-    } 
-    .logo{
-      flex: 30%;
-
-      @media (max-width:  $breakpoint-tabs){
-        flex: 40%;
-        text-align: center;
-      }
-
-      a{
-        color: $white-color;
-
-        @media (max-width:  $breakpoint-tabs){
-          text-align: center;
-        }
-
-        h2{
-          font-size: 24px;
-        }
-        img{
-          width: auto;
-          height: 100%;
-          max-height: 40px;
-        }
-      }
-    }
-    .search-bar{
-      flex:  40%;
-      text-align: center;
-
-      @media (max-width: $breakpoint-tabs){
-        display: none;
-      }
-
-      form{
-
-        label{
-          position:  relative;
-
-          input{
-            position: relative;
-            width:  100%;
-            padding: 15px 25px;
-            max-height: 50px;
-            font-size: 14px;
-            border:  0px;
-            border-radius: 50px;
-            background-color: $white-background;
-
-            &:focus{
-              outline: none;
-            }
-          }
-          button {
-            position: absolute;
-            right: 4px;
-            top: 0px;
-            bottom: 0px;
-            margin: auto;
-            border: 0px;
-            background: $white-background;
-            padding: 10px 25px;
-            border-radius: 50px;
-            min-height: 41px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            z-index: 1;
-
-            &:hover{
-              background-color: $primary-green-light;
-            }
-          }
-        }
-      }
-    }
-    .header-cart {
-      flex:  30%;
-
-      @media (max-width: $breakpoint-tabs){
-        .d_none{
-          display: none;
-        }
-      }
-
-      ul {
-        @include main-div;
-        align-items: right;
-        justify-content: flex-end;
-
-        li{
-          padding-left: 20px;
-          position: relative;
-          font-size: 14px;
-
-          span{
-            position: absolute;
-            top: -15px;
-            right: -10px;
-            color: #000;
-            background-color: #E2D784;
-            padding: 5px;
-            border-radius: 50px;
-            height: 10px;
-            width: 10px;
-            font-size: 12px;
-            text-align: center;
-          }
-
-          a{
-            color:  $white-color;
-            text-decoration: none;
-
-            b{
-              font-weight: 400;
-              padding-left: 5px;
-
-              @media (max-width:  $breakpoint-tabs){
-                display: none;
-              }
-            }
-
-            i{
-              color:  $white-color;
-              font-size: 16px;
-            }
-          }
-        }
-      }
-    }
   }
 }
 .cartDrawer{

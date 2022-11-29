@@ -31,6 +31,17 @@ saveclose.onclick = function() {
   saveModal.style.display = "none";
 }
 
+// search area modal
+var saveModal = document.getElementById("searchDiv");
+var savebtn = document.getElementById("searchM");
+var searchClose = document.getElementsByClassName("searchClose")[0];
+savebtn.onclick = function() {
+  saveModal.style.display = "block";
+}
+searchClose.onclick = function() {
+  saveModal.style.display = "none";
+}
+
 // mobile menu
 var mobile_menu = document.getElementById("mobileNav");
 var btn1 = document.getElementById("hamButtton");
