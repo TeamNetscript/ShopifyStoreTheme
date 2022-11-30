@@ -5140,6 +5140,11 @@ footer .copyrights .footer-item_copyright img {
   padding: 70px 0px;
   background-color: #fff;
 }
+@media (max-width: 768px) {
+  .product-banners {
+    padding: 50px 0px;
+  }
+}
 .product-banners .container {
   position: relative;
   max-width: 1330px;
@@ -5187,11 +5192,14 @@ footer .copyrights .footer-item_copyright img {
   right: 0;
   bottom: 0;
   transition: 0.5s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 .product-banners .product-banners_wrapper .product-banners_item a:hover img {
   transform: scale(1.03);
+}
+.product-banners .product-banners_wrapper .product-banners_item a:hover h2:before {
+  width: 100%;
 }
 .product-banners .product-banners_wrapper .product-banners_item img {
   width: 100%;
@@ -5202,18 +5210,22 @@ footer .copyrights .footer-item_copyright img {
 .product-banners .product-banners_wrapper .product-banners_item h2 {
   position: absolute;
   left: 7%;
-  bottom: 7%;
+  bottom: 10%;
   color: #fff;
-  letter-spacing: 1px;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
   z-index: 2;
 }
 .product-banners .product-banners_wrapper .product-banners_item h2:before {
   content: "";
   position: absolute;
   left: 0px;
-  width: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  transform-origin: left;
+  transition: 0.3s ease-in-out;
 }
 
 .text-image-section {
