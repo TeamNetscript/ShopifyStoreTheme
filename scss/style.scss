@@ -652,15 +652,15 @@ body {
   }
 }
 /*standard header (second header)*/
-.nav_standred_2{
+.nav_standred_dark{
   top: 0;
   position: sticky;
 }
-.header_standred_2{
+.header_standred_dark{
   z-index: 9;
 
-    .main-background-green{ 
-      padding: 20px 0px;
+    .main-background-green{
+      padding: 10px 0px;
     }
     .js-drawer-open {
       -webkit-animation-name: shadow_left;
@@ -725,52 +725,56 @@ body {
           }
         }
       }
-      .search-bar{
-        flex:  30%;
-        text-align: center;
+    }
+    .header-cart {
+      flex:  30%;
 
-        @media (max-width: $breakpoint-tabs){
+      @media (max-width: $breakpoint-tabs){
+        .d_none{
           display: none;
         }
+      }
 
-        form{
+      ul {
+        @include main-div;
+        align-items: right;
+        justify-content: flex-end;
 
-          label{
-            position:  relative;
+        li{
+          padding-left: 20px;
+          position: relative;
+          font-size: 14px;
 
-            input{
-              position: relative;
-              width:  100%;
-              padding: 15px 25px;
-              max-height: 50px;
-              font-size: 14px;
-              border:  0px;
-              border-radius: 50px;
-              background-color: $white-background;
+          span{
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            color: #000;
+            background-color: #E2D784;
+            padding: 5px;
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+            font-size: 12px;
+            text-align: center;
+          }
 
-              &:focus{
-                outline: none;
+          a{
+            color:  $white-color;
+            text-decoration: none;
+
+            b{
+              font-weight: 400;
+              padding-left: 5px;
+
+              @media (max-width:  $breakpoint-tabs){
+                display: none;
               }
             }
-            button {
-              position: absolute;
-              right: 4px;
-              top: 0px;
-              bottom: 0px;
-              margin: auto;
-              border: 0px;
-              background: $white-background;
-              padding: 10px 25px;
-              border-radius: 50px;
-              min-height: 41px;
-              font-size: 16px;
-              cursor: pointer;
-              text-align: center;
-              z-index: 1;
 
-              &:hover{
-                background-color: $primary-green-light;
-              }
+            i{
+              color:  $white-color;
+              font-size: 16px;
             }
           }
         }
@@ -778,10 +782,10 @@ body {
     }
     .nav-bar{
       padding: 0px 0px;
-      position:  relative;
-      display:  flex;
-      width:  100%;
-      height:  auto;
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
 
       .js-drawer-close{
         -webkit-animation-name: shadow_back;
@@ -936,7 +940,7 @@ body {
           min-width:  100%;
           width: 100%;
           padding: 20px 0px;
-          z-index: 2;
+          z-index: 2; 
 
           .nav_Drop_Wrapper{
             @include main-div;
@@ -960,8 +964,7 @@ body {
             } 
             ul{
               display: block;
-            } 
-
+            }
             li{
               list-style-type: none;
               padding: 0px 0px;
@@ -979,61 +982,7 @@ body {
             }
           } 
         } 
-      }
-      .header-cart {
-        flex:  30%;
-
-        @media (max-width: $breakpoint-tabs){
-          .d_none{
-            display: none;
-          }
-        }
-
-        ul {
-          @include main-div;
-          align-items: right;
-          justify-content: flex-end;
-
-          li{
-            padding-left: 20px;
-            position: relative;
-            font-size: 14px;
-
-            span{
-              position: absolute;
-              top: -15px;
-              right: -10px;
-              color: #000;
-              background-color: #E2D784;
-              padding: 5px;
-              border-radius: 50px;
-              height: 10px;
-              width: 10px;
-              font-size: 12px;
-              text-align: center;
-            }
-
-            a{
-              color:  $white-color;
-              text-decoration: none;
-
-              b{
-                font-weight: 400;
-                padding-left: 5px;
-
-                @media (max-width:  $breakpoint-tabs){
-                  display: none;
-                }
-              }
-
-              i{
-                color:  $white-color;
-                font-size: 16px;
-              }
-            }
-          }
-        }
-      }
+      } 
       .desktop_nav{
         @include main-div;
 

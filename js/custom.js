@@ -18,7 +18,7 @@ window.onclick = function(event) {
   else if (event.target == saveModal) {
     saveModal.style.display = "none";
   }
-}
+} 
 
 // Liked products
 var saveModal = document.getElementById("mySave");
@@ -45,6 +45,7 @@ span1.onclick = function() {
   mobile_menu.classList.remove("js-drawer-open");
   mobile_menu.classList.add("js-drawer-close");
 }
+ 
 
 // Main slider
 $('.hero_slider').slick({
@@ -198,7 +199,7 @@ $(document).ready(function() {
 
 // dropdown menu mobile
 $(function() {
-  $('.dropdown-toggle').click(function() { 
+  $('.dropdown-toggle').click(function() {
     $(this).next('.dropdown').slideToggle();
   });
 
@@ -211,7 +212,7 @@ $(function() {
 
 // dropdown menu desktop
 $(function() {
-  $('.dropdown-toggle_desktop').mouseover(function(){ 
+  $('.dropdown-toggle_desktop').mouseover(function(){
     $(this).next('.dropdown-desktop').slideDown();
   });
 
