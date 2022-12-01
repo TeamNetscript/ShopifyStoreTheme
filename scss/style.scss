@@ -1073,7 +1073,7 @@ body {
                   left: 0px;
                   background: #0a595b;
                   border: 0px;
-                  content: "";
+                  content: ""; 
                   padding: 0px;
                   margin: 0px;
                 }
@@ -1207,6 +1207,7 @@ body {
       }
       .aLink{
         @include aLink;
+        width: 100%;
       }
       p{
         margin-bottom: 15px;
@@ -1262,6 +1263,20 @@ body {
   } 
   .close:hover,
   .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+  .closeCart {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+  } 
+  .closeCart:hover,
+  .closeCart:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -1500,7 +1515,7 @@ body {
   position: absolute; 
   z-index: 10;
   right: -50%;
-  width: 300px; 
+  width: 300px;
   height: auto;
 
   .saveDrawer_Content {
@@ -1641,6 +1656,144 @@ body {
               display: inline-block;
               border-bottom: 1px solid #000;
               margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  } 
+}
+/*main search area*/
+.searchMain{
+  display: none; 
+  position: fixed; 
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .search_Content {
+    position: absolute;
+    background-color: #f1f1f1;
+    height: fit-content;
+    margin:0px auto;
+    top: 15%;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+    border: 0px;
+    max-width: 650px;
+    -webkit-animation-name: liketop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: liketop;
+    animation-duration: 0.4s;
+    width: 100%;
+    border-radius: 6px; 
+  } 
+  /* Add Animation */
+  @-webkit-keyframes liketop {
+    from {top: -40px; opacity:0} 
+    to {top:0; opacity:1}
+  } 
+  @keyframes liketop {
+    from {top: -40px; opacity:0}
+    to {top: 15%; opacity:1}
+  } 
+  .saveClose {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+  } 
+  .saveClose:hover,
+  .saveClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+  .header{
+    position: relative;
+    display: block;
+    padding: 20px 15px;
+    border-bottom: 1px solid #dedede;
+    text-align: left;
+  } 
+  .search_Body {
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden; 
+
+    .saveDrawer_Items{
+
+      .savwItem_Wrapper{  
+        position: relative;
+        padding: 0px 0px;
+        box-sizing: border-box;
+
+        .saveItem{
+          @include main-div;
+          border-bottom: 1px solid #dedede;
+          padding: 10px 0px;
+
+          &:last-child{
+            border-bottom: 0px;
+          }
+          .search-bar{
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+
+            form{
+
+              label{
+                position:  relative;
+                width: 100%;
+                box-sizing: border-box;
+                display: block;
+
+                input{
+                  position: relative;
+                  width:  100%;
+                  padding: 15px 25px;
+                  max-height: 50px;
+                  font-size: 14px;
+                  border:  0px;
+                  border-radius: 50px;
+                  background-color: $white-background;
+                  box-sizing: border-box;
+
+                  &:focus{
+                    outline: none;
+                  }
+                }
+                button {
+                  position: absolute;
+                  right: 2px;
+                  top: 2px;
+                  bottom: 2px;
+                  margin: auto;
+                  border: 0px;
+                  background: $white-background;
+                  padding: 10px 25px;
+                  border-radius: 50px;
+                  min-height: 41px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  text-align: center;
+                  z-index: 1;
+
+                  &:hover{
+                    background-color: $primary-green-light;
+                  }
+                }
+              }
             }
           }
         }

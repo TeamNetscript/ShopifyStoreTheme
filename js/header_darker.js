@@ -11,12 +11,11 @@ spanCart.onclick = function() {
 window.onclick = function(event) {
   if (event.target == cartModal2) {
     cartModal2.style.display = "none";
-  }
-  else if (event.target == mobile_menu) {
-    mobile_menu.style.display = "none";
   } 
-}
-var mobile_menu = document.getElementById("mobileNav");
+  else if (event.target == saveModal) {
+    saveModal.style.display = "none";
+  }
+} 
 // Liked products
 var saveModal = document.getElementById("mySave");
 var savebtn = document.getElementById("mySavebtn");

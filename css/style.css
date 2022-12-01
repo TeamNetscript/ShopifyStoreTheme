@@ -1546,6 +1546,7 @@ body {
   transition: 0.2s ease-in-out;
   cursor: pointer;
   transform-origin: left top;
+  width: 100%;
 }
 .cartDrawer .cartDrawer_Content .cart_Footer .aLink:hover {
   color: #05595B;
@@ -1613,6 +1614,20 @@ body {
 }
 .cartDrawer .close:hover,
 .cartDrawer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cartDrawer .closeCart {
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.cartDrawer .closeCart:hover,
+.cartDrawer .closeCart:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -2083,6 +2098,146 @@ body {
   display: inline-block;
   border-bottom: 1px solid #000;
   margin-top: 5px;
+}
+
+/*main search area*/
+.searchMain {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add Animation */
+}
+.searchMain .search_Content {
+  position: absolute;
+  background-color: #f1f1f1;
+  height: fit-content;
+  margin: 0px auto;
+  top: 15%;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+  border: 0px;
+  max-width: 650px;
+  -webkit-animation-name: liketop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: liketop;
+  animation-duration: 0.4s;
+  width: 100%;
+  border-radius: 6px;
+}
+@-webkit-keyframes liketop {
+  from {
+    top: -40px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes liketop {
+  from {
+    top: -40px;
+    opacity: 0;
+  }
+  to {
+    top: 15%;
+    opacity: 1;
+  }
+}
+.searchMain .saveClose {
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.searchMain .saveClose:hover,
+.searchMain .saveClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.searchMain .header {
+  position: relative;
+  display: block;
+  padding: 20px 15px;
+  border-bottom: 1px solid #dedede;
+  text-align: left;
+}
+.searchMain .search_Body {
+  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper {
+  position: relative;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dedede;
+  padding: 10px 0px;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem:last-child {
+  border-bottom: 0px;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label input {
+  position: relative;
+  width: 100%;
+  padding: 15px 25px;
+  max-height: 50px;
+  font-size: 14px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label input:focus {
+  outline: none;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label button {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  margin: auto;
+  border: 0px;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  min-height: 41px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1;
+}
+.searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label button:hover {
+  background-color: #E7F6F2;
 }
 
 .contact-details {
