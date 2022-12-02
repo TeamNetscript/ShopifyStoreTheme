@@ -11,7 +11,10 @@ spanCart.onclick = function() {
 window.onclick = function(event) {
   if (event.target == cartModal2) {
     cartModal2.style.display = "none";
-  } 
+  }
+  else if (event.target == mobileMenu) {
+    mobileMenu.style.display = "none";
+  }
   else if (event.target == saveModal) {
     saveModal.style.display = "none";
   }

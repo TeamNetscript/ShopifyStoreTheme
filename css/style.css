@@ -948,6 +948,11 @@ body {
   align-items: center;
   align-content: center;
 }
+@media (max-width: 768px) {
+  .header_standred_dark .header_wrapper {
+    padding: 10px 0px;
+  }
+}
 .header_standred_dark .header_wrapper .mobile_logo {
   flex: 30%;
   display: none;
@@ -1052,6 +1057,11 @@ body {
   display: flex;
   width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .header_standred_dark .nav-bar {
+    width: 0%;
+  }
 }
 .header_standred_dark .nav-bar .js-drawer-close {
   -webkit-animation-name: shadow_back;
@@ -2291,7 +2301,7 @@ body {
   -webkit-animation-duration: 0.4s;
   animation-name: liketop;
   animation-duration: 0.4s;
-  width: 100%;
+  width: 95%;
   border-radius: 6px;
 }
 @-webkit-keyframes liketop {
