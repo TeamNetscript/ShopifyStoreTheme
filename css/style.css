@@ -1818,6 +1818,42 @@ body {
   top: 0px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+.hero_section .hero_slider .slick-dots {
+  position: absolute;
+  display: flex;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.hero_section .hero_slider .slick-dots .slick-active {
+  background-color: #fff;
+}
+.hero_section .hero_slider .slick-dots li {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.51);
+  height: 7px;
+  width: 35px;
+  border: 0px;
+  overflow: hidden;
+  margin: 0px 3px;
+  border-radius: 10px;
+}
+.hero_section .hero_slider .slick-dots li button {
+  border: 0px;
+  background: transparent;
+  font-size: 0px;
+  width: 100%;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+.hero_section .hero_slider .slick-dots li button:focus {
+  outline: none;
+}
 .hero_section .hero_slider .slick-slide {
   position: relative;
   max-height: 700px;
@@ -2099,6 +2135,82 @@ body {
   .hero_section .hero_slider .slick-slide .slider_content_right h2 {
     font-size: 24px;
   }
+}
+.hero_section .hero_slider .slider-ad {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  padding: 40px 20px 20px 20px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.53);
+  max-width: 300px;
+  width: 100%;
+}
+.hero_section .hero_slider .slider-ad span {
+  position: absolute;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: #ff605c;
+  top: 10px;
+  left: 15px;
+}
+.hero_section .hero_slider .slider-ad span:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: #febd4f;
+  top: 0px;
+  left: 15px;
+}
+.hero_section .hero_slider .slider-ad span:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: #12ca54;
+  top: 0px;
+  left: 30px;
+}
+.hero_section .hero_slider .slider-ad .slider-ad_body {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.hero_section .hero_slider .slider-ad .slider-ad_body:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 12px;
+  background-color: rgba(255, 255, 255, 0.7098039216);
+  width: 50px;
+  height: 7px;
+  border-radius: 10px;
+  margin: auto;
+}
+.hero_section .hero_slider .slider-ad .slider-ad_body h2 {
+  position: relative;
+  font-size: 18px;
+  padding-bottom: 5px;
+  line-height: 1.3;
+  font-weight: bold;
+  color: #05595B;
+}
+.hero_section .hero_slider .slider-ad .slider-ad_body p {
+  color: #6e6e6e;
+  line-height: 1.5;
 }
 
 /*Liked products*/

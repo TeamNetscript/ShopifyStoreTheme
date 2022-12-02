@@ -51,11 +51,12 @@ span1.onclick = function() {
 $('.hero_slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: false,
+  dots: true,
   centerMode: false,
   focusOnSelect: true,
   cssEase: 'linear',
-  fade: true
+  fade: true,
+  arrows: false
 });
 
 // Featured Products Home Page
