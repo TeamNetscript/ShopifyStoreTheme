@@ -170,6 +170,7 @@ body {
           animation-duration: .6s;
           box-sizing:  border-box;
           min-height: 100%;
+          max-width: 100%;
         }
         /*main shadow to left*/
         @-webkit-keyframes shadow_back {
@@ -833,6 +834,7 @@ body {
           animation-duration: .6s;
           box-sizing:  border-box;
           min-height: 100%;
+          max-width: 100%;
         }
         /*main shadow to left*/
         @-webkit-keyframes shadow_back {
@@ -5246,6 +5248,14 @@ footer{
   height: auto;
   justify-content: space-between;
 
+  @media (max-width: $breakpoint-tabplus){
+    height: 400px;
+  }
+  @media (max-width: $breakpoint-tabs){
+    flex-direction: column;
+    height: auto;
+  }
+
   .container{
     position: absolute;
     max-width: 1330px;
@@ -5257,6 +5267,20 @@ footer{
     right: 0;
     top: 50%;
     transform: translate(0px, -50%);
+
+    @media (max-width: $breakpoint-tabs){
+      position: relative;
+      max-width: 1330px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      left: unset;
+      right: unset;
+      top: unset;
+      transform: translate(0px, 0%);
+      padding: 50px 0px;
+    }
   }
   .Richtext-left{
     flex: 50%;
@@ -5266,7 +5290,8 @@ footer{
 
     img{
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .Richtext-wrapper{
@@ -5276,7 +5301,15 @@ footer{
       flex-direction: column;
       gap: 15px;
       width: 100%;
-      max-width: 45%; 
+      max-width: 45%;
+
+      @media (max-width: $breakpoint-tabs){
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
+      }
 
       span{
         position: relative;
