@@ -1908,6 +1908,7 @@ body {
   line-height: 1.3;
   color: #000;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .hero_section .hero_slider .slick-slide .slider_content ul {
   position: relative;
@@ -2556,6 +2557,11 @@ body {
   height: auto;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .contact-details .contact-details_wrapper {
+    flex-direction: column;
+  }
+}
 .contact-details .contact-detail_item {
   position: relative;
   display: flex;
@@ -2569,10 +2575,12 @@ body {
   gap: 15px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.0588235294);
   transition: 0.2s ease-in-out;
+  border: 1px solid #eee;
   border-radius: 0px;
+  box-sizing: border-box;
 }
 .contact-details .contact-detail_item:hover {
-  background-color: #053334;
+  background-color: #05595B;
 }
 .contact-details .contact-detail_item:hover h3, .contact-details .contact-detail_item:hover p, .contact-details .contact-detail_item:hover a {
   color: #fff;
@@ -2675,6 +2683,11 @@ footer .main-div .footer-item h2 {
 footer .main-div .footer-item h3 {
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  footer .main-div .footer-item h3 {
+    font-size: 16px;
+  }
+}
 footer .main-div .footer-item .italic {
   font-size: 12px;
   text-decoration: underline;
@@ -2707,9 +2720,10 @@ footer .main-div .footer-item .main-div .footer-item_nav h3 {
   footer .main-div .footer-item .main-div .footer-item_nav h3:before {
     content: "❯";
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 3px;
+    right: 5px;
     transform: rotate(90deg);
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -2724,9 +2738,10 @@ footer .main-div .footer-item .main-div .footer-item_nav ul li a {
   color: #fff;
   font-size: 14px;
   line-height: 1.5;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   margin-bottom: 5px;
   transition: 0.1s ease-in-out;
+  font-weight: 300;
 }
 footer .main-div .footer-item .main-div .footer-item_nav ul li a:hover {
   border-bottom: 1px solid #fff;
@@ -4739,6 +4754,12 @@ footer .copyrights .footer-item_copyright img {
   color: #252525;
   font-size: 13px;
   padding-top: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .about-form form .column p {
+    text-align: center;
+  }
 }
 
 .about {
