@@ -3441,7 +3441,7 @@ footer{
             text-decoration: underline;
           }
         }
-        .tag{
+        .product-tag{
           position: relative;
           display: flex;
           padding: 10px 15px;
@@ -3846,8 +3846,10 @@ footer{
     span{}
     h2{
       position: relative;
+      font-weight: bold;
       font-size: 28px;
       padding: 15px 0px;
+      color: $primary-green;
     }
     p{
       line-height: 1.5;
