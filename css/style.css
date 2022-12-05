@@ -4900,16 +4900,59 @@ footer .copyrights .footer-item_copyright img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.35);
 }
-.image-banner .image-banner_wrapper .image-banner_content {
-  position: absolute;
+.image-banner .image-banner_wrapper .right_top {
   right: 3%;
   top: 5%;
+  align-items: flex-end;
   text-align: right;
+}
+.image-banner .image-banner_wrapper .right_center {
+  right: 3%;
+  top: 50%;
+  align-items: flex-end;
+  transform: translate(0%, -50%);
+  text-align: right;
+}
+.image-banner .image-banner_wrapper .right_bottom {
+  right: 3%;
+  bottom: 5%;
+  align-items: flex-end;
+  text-align: right;
+}
+.image-banner .image-banner_wrapper .left_top {
+  left: 3%;
+  top: 5%;
+  align-items: start;
+  text-align: left;
+}
+.image-banner .image-banner_wrapper .left_center {
+  left: 3%;
+  top: 50%;
+  align-items: start;
+  text-align: left;
+  transform: translate(0%, -50%);
+}
+.image-banner .image-banner_wrapper .left_bottom {
+  left: 3%;
+  align-items: start;
+  text-align: left;
+  bottom: 5%;
+}
+.image-banner .image-banner_wrapper .center_center {
+  left: 0%;
+  align-items: center;
+  text-align: center;
+  right: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  margin: auto;
+}
+.image-banner .image-banner_wrapper .image-banner_content {
+  position: absolute;
   width: 100%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
   gap: 10px;
   color: #fff;
@@ -4982,6 +5025,11 @@ footer .copyrights .footer-item_copyright img {
   line-height: 1.5;
   padding-left: 10px;
   padding-bottom: 5px;
+}
+.faq .faq-wrapper a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #05595B;
 }
 .faq .faq-wrapper .product-description {
   padding: 30px 0px;
@@ -6018,6 +6066,92 @@ footer .copyrights .footer-item_copyright img {
   text-align: center;
 }
 .RichText .RichText-wrapper .RichText-content .aLink:hover {
+  color: #05595B;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+/*image text*/
+.Richtext {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #E7F6F2;
+  padding: 0px;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+}
+.Richtext .container {
+  position: absolute;
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+.Richtext .Richtext-left {
+  flex: 50%;
+}
+.Richtext .Richtext-right {
+  flex: 50%;
+}
+.Richtext .Richtext-right img {
+  width: 100%;
+  height: auto;
+}
+.Richtext .Richtext-wrapper .Richtext-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 45%;
+}
+.Richtext .Richtext-wrapper .Richtext-content span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.Richtext .Richtext-wrapper .Richtext-content h2 {
+  position: relative;
+  display: block;
+  font-size: 38px;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  .Richtext .Richtext-wrapper .Richtext-content h2 {
+    font-size: 24px;
+  }
+}
+.Richtext .Richtext-wrapper .Richtext-content p {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6e6e6e;
+}
+.Richtext .Richtext-wrapper .Richtext-content .aLink {
+  font-size: 16px;
+  color: #fff;
+  background-color: #05595B;
+  padding: 10px 25px;
+  border: 1px solid #05595B;
+  font-weight: 500;
+  width: auto;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  transform-origin: left top;
+  max-width: 110px;
+  position: relative;
+  text-align: center;
+}
+.Richtext .Richtext-wrapper .Richtext-content .aLink:hover {
   color: #05595B;
   border: 1px solid #fff;
   background-color: #fff;
