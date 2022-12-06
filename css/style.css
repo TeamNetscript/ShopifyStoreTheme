@@ -4736,6 +4736,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .about-form form .row label input:focus {
   outline: none;
+  border: 1px solid #000;
 }
 .about-form form .column {
   position: relative;
@@ -4759,6 +4760,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .about-form form .column label textarea:focus {
   outline: none;
+  border: 1px solid #000;
 }
 .about-form form .column button {
   position: relative;
