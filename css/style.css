@@ -1581,6 +1581,7 @@ body {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   width: 100%;
 }
 .cartDrawer .cartDrawer_Content .cart_Footer .aLink:hover {
@@ -1708,6 +1709,7 @@ body {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
 }
 .cartDrawer .drawer_Body .drawer_Empty .aLink:hover {
   color: #05595B;
@@ -3142,6 +3144,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   display: inline-block;
   margin: 15px auto 0 auto;
   max-width: 150px;
@@ -3273,6 +3276,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   max-width: 250px;
   z-index: 1;
 }
@@ -4437,6 +4441,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
 }
 .product-detail .product-details_wrapper .product-details_content form .buy-wrapper .buy-now button:hover {
   color: #05595B;
@@ -5012,6 +5017,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   max-width: 150px;
   position: relative;
 }
@@ -5972,6 +5978,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   margin-top: 30px;
 }
 .about-effect .about-wrapper .aLink:hover {
@@ -6092,6 +6099,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   max-width: 110px;
   position: relative;
   text-align: center;
@@ -6215,6 +6223,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   max-width: 110px;
   position: relative;
   text-align: center;
@@ -6298,6 +6307,7 @@ footer .copyrights .footer-item_copyright img {
   cursor: pointer;
   transform-origin: left top;
   max-width: 100%;
+  position: relative;
   margin-left: 20px;
 }
 .blog .blog-content li .aLink:hover {

@@ -65,6 +65,7 @@ $newsletter-background: #313131;
 	cursor: pointer;
 	transform-origin: left top;
 	max-width: 100%;
+	position: relative;
 
 	&:hover{
 		color: $primary-green;
