@@ -361,7 +361,7 @@ body {
           } 
           li{
             list-style-type: none;
-            padding: 0px 10px;
+            padding: 0px 5px;
 
             @media (max-width: $breakpoint-tabs){
               padding: 0px 5px;
@@ -1031,7 +1031,7 @@ body {
             font-size: 24px;
             padding: 10px;
           }
-        } 
+        }  
         ul{
           @include main-div;
           justify-content: center;
@@ -1041,14 +1041,14 @@ body {
           } 
           li{
             list-style-type: none;
-            padding: 0px 10px;
+            padding: 0px 5px;
 
             @media (max-width: $breakpoint-tabs){
               padding: 0px 5px;
             } 
             a{
               color: #fff;
-              padding: 30px 5px;
+              padding: 25px 5px;
               position: relative;
               display: block;
 
@@ -5363,6 +5363,37 @@ footer{
         max-width: 110px;
         position: relative;
         text-align: center;
+      }
+    }
+  }
+}
+.blog{
+  @include main-div;
+  padding: 50px 0px;
+  background-color: $white-background;
+
+  .container{
+    @include container;
+  }
+  .blog-wrapper{
+    @include main-div;
+  }
+  .blog-title{
+
+    p{
+      position: relative;
+      line-height: 1.5;
+    }
+  }
+  .blog-content{
+
+    li{
+
+      img{}
+      h3{}
+      p{}
+      .aLink{
+        @include aLink;
       }
     }
   }
