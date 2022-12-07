@@ -5377,6 +5377,7 @@ footer{
   }
   .blog-wrapper{
     @include main-div;
+    flex-direction: column;
   }
   .blog-title{
 
@@ -5386,14 +5387,42 @@ footer{
     }
   }
   .blog-content{
+    display: flex;
+    position: relative;
+    gap: 15px;
+    flex-wrap: wrap;
 
     li{
+      flex: 32%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #f5fffc;
+      padding: 0px;
+      padding-bottom: 15px;
 
-      img{}
-      h3{}
-      p{}
+      img{
+        width: 100%;
+        height: auto;
+      }
+      h3, p{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      h3{
+        line-height: 1.3;
+        position: relative;
+        display: block;
+        font-size: 18px;
+      }
+      p{
+        line-height: 1.5;
+        color: $text-color;
+      }
       .aLink{
         @include aLink;
+        margin-left: 20px;
       }
     }
   }

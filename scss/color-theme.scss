@@ -60,10 +60,11 @@ $newsletter-background: #313131;
 	padding: 10px 25px;
 	border: 1px solid $primary-green;
 	font-weight: 500;
-	width: auto; 
+	width: fit-content; 
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
 	transform-origin: left top;
+	max-width: 100%;
 
 	&:hover{
 		color: $primary-green;
