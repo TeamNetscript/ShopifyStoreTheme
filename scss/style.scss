@@ -5367,9 +5367,49 @@ footer{
     }
   }
 }
+.blog-title{
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #d8ede7;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+  margin: 0 auto;
+  text-align: center;
+
+  .title{
+    position: relative;
+    font-weight: bold;
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 70px;
+      height: 2px;
+      background-color: #05595B;
+      border: 0px;
+      bottom: 0px;
+      margin: 0 auto;
+      transform: translate(-50%, 0px);
+    }
+  }
+  p{
+    position: relative;
+    line-height: 1.5;
+    color: $text-color;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 15px 0px 15px;
+    box-sizing: border-box;
+  }
+}
 .blog{
   @include main-div;
-  padding: 50px 0px;
+  padding: 0px 0px 50px 0px;
   background-color: $white-background;
 
   .container{
@@ -5378,13 +5418,6 @@ footer{
   .blog-wrapper{
     @include main-div;
     flex-direction: column;
-  }
-  .blog-title{
-
-    p{
-      position: relative;
-      line-height: 1.5;
-    }
   }
   .blog-content{
     display: flex;
@@ -5402,6 +5435,13 @@ footer{
       padding: 0px;
       padding-bottom: 15px;
       transition: 0.2s ease-in-out;
+
+      @media(max-width: $breakpoint-tabs){
+        flex: 45%;
+      }
+      @media(max-width: $breakpoint-mobile){
+        flex: 100%;
+      }
 
       .img-overlay{
         position: relative;
@@ -5479,6 +5519,63 @@ footer{
 
         &:hover:before{
           width: 100%;
+        }
+      }
+    }
+  }
+}
+.blog-detail{
+  @include main-div;
+  padding: 50px 0px;
+  background-color: $white-background;
+
+  @media (max-width: $breakpoint-tabs){
+    padding: 30px 0px;
+  }
+
+  .container{
+    @include container;
+  }
+  .blog-detail_wrapper{
+    @include main-div;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .blog-content{
+      @include main-div;
+      flex-direction: column;
+
+      span{
+        background-color: #05595B;
+        padding: 5px 15px;
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        width: fit-content;
+        font-size: 13px;
+      }
+      h3{
+        line-height: 1.3;
+      }
+      img{
+        margin-top: 15px;
+      }
+      p{
+        padding-top: 15px;
+        line-height: 1.5;
+        color: $text-color;
+      }
+      ul{
+        padding: 10px 0px;
+        list-style: disc inside;
+
+        li{
+          font-size: 14px;
+          color: $text-color;
+          line-height: 1;
+          padding: 5px 0px;
         }
       }
     }
