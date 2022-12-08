@@ -6268,20 +6268,55 @@ footer .copyrights .footer-item_copyright img {
   flex-wrap: wrap;
 }
 .blog .blog-content li {
-  flex: 32%;
+  flex: 24%;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  background-color: #f5fffc;
+  gap: 10px;
+  background-color: #f7f7f7;
   padding: 0px;
   padding-bottom: 15px;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-content li .img-overlay {
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-content li .img-overlay:hover:before {
+  background-color: rgba(0, 51, 52, 0.36);
+}
+.blog .blog-content li .img-overlay:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-content li .img-overlay p {
+  line-height: 1.5;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  bottom: 15px;
+  left: 15px;
+  visibility: hidden;
+  max-height: 65px;
+  overflow: hidden;
+  height: auto;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-content li .img-overlay:hover p {
+  visibility: visible;
+  transition: 0.2s ease-in-out;
 }
 .blog .blog-content li img {
   width: 100%;
   height: auto;
 }
-.blog .blog-content li h3, .blog .blog-content li p {
+.blog .blog-content li h3 {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -6290,30 +6325,33 @@ footer .copyrights .footer-item_copyright img {
   position: relative;
   display: block;
   font-size: 18px;
-}
-.blog .blog-content li p {
-  line-height: 1.5;
-  color: #6e6e6e;
-}
-.blog .blog-content li .aLink {
-  font-size: 16px;
-  color: #fff;
-  background-color: #05595B;
-  padding: 10px 25px;
-  border: 1px solid #05595B;
-  font-weight: 500;
-  width: fit-content;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  transform-origin: left top;
-  max-width: 100%;
-  position: relative;
-  margin-left: 20px;
-}
-.blog .blog-content li .aLink:hover {
   color: #05595B;
-  border: 1px solid #fff;
-  background-color: #fff;
+  height: auto;
+  max-height: 50px;
+  overflow: hidden;
+}
+.blog .blog-content li a {
+  margin-left: 20px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+.blog .blog-content li a:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 15%;
+  height: 1px;
+  background-color: #000;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-content li a:hover:before {
+  width: 100%;
 }
 
 .skelton {

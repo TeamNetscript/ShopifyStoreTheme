@@ -5393,20 +5393,56 @@ footer{
     flex-wrap: wrap;
 
     li{
-      flex: 32%;
+      flex: 24%;
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      background-color: #f5fffc;
+      gap: 10px;
+      background-color: #f7f7f7;
       padding: 0px;
       padding-bottom: 15px;
+      transition: 0.2s ease-in-out;
 
+      .img-overlay{
+        position: relative;
+        transition: 0.2s ease-in-out;
+
+        &:hover:before{
+          background-color: rgb(0 51 52 / 36%);
+        }
+        &:before{
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          transition: 0.2s ease-in-out;
+        }
+        p{
+          line-height: 1.5;
+          color: #fff;
+          position: absolute;
+          width: 90%;
+          bottom: 15px;
+          left: 15px;
+          visibility: hidden;
+          max-height: 65px;
+          overflow: hidden;
+          height: auto;
+          transition: 0.2s ease-in-out;
+        }
+        &:hover p{
+          visibility: visible;
+          transition: 0.2s ease-in-out;
+        }
+      }
       img{
         width: 100%;
         height: auto;
       }
-      h3, p{
+      h3{
         padding-left: 20px;
         padding-right: 20px;
       }
@@ -5415,14 +5451,35 @@ footer{
         position: relative;
         display: block;
         font-size: 18px;
+        color: $primary-green;
+        height: auto;
+        max-height: 50px;
+        overflow: hidden;
       }
-      p{
-        line-height: 1.5;
-        color: $text-color;
-      }
-      .aLink{
-        @include aLink;
+      a{
         margin-left: 20px;
+        color: #000;
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        max-width: 100%;
+        padding: 5px 0px;
+        font-size: 14px;
+
+        &:before{
+          content: "";
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          width: 15%;
+          height: 1px;
+          background-color: #000;
+          transition: 0.2s ease-in-out;
+        }
+
+        &:hover:before{
+          width: 100%;
+        }
       }
     }
   }
