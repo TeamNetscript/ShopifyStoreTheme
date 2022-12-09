@@ -6348,6 +6348,7 @@ footer .copyrights .footer-item_copyright img {
   display: flex;
   padding-left: 20px;
   flex-wrap: wrap;
+  gap: 5px;
 }
 .blog .blog-content li .blog-tag span {
   position: relative;
@@ -6356,7 +6357,6 @@ footer .copyrights .footer-item_copyright img {
   width: fit-content;
   font-size: 14px;
   font-weight: 500;
-  margin: 0px 5px 5px 0px;
   border: 1px solid #bda700;
   padding: 3px 10px;
 }
@@ -6457,6 +6457,11 @@ footer .copyrights .footer-item_copyright img {
   color: #fff;
   width: fit-content;
   font-size: 13px;
+}
+.blog-detail .blog-detail_wrapper .blog-content a {
+  color: #05595B;
+  font-weight: 500;
+  text-decoration: underline;
 }
 .blog-detail .blog-detail_wrapper .blog-content h3 {
   line-height: 1.3;

@@ -5469,6 +5469,7 @@ footer{
         display: flex;
         padding-left: 20px;
         flex-wrap: wrap;
+        gap: 5px;
 
         span{
           position: relative;
@@ -5477,7 +5478,6 @@ footer{
           width: fit-content;
           font-size: 14px;
           font-weight: 500;
-          margin: 0px 5px 5px 0px;
           border: 1px solid #bda700;
           padding: 3px 10px;
         }
@@ -5568,6 +5568,11 @@ footer{
         color: #fff;
         width: fit-content;
         font-size: 13px;
+      }
+      a{
+        color: #05595B;
+        font-weight: 500;
+        text-decoration: underline;
       }
       h3{
         line-height: 1.3;
