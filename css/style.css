@@ -712,7 +712,7 @@ body {
   display: block;
 }
 .header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper li a {
-  color: #000;
+  color: #6e6e6e;
   padding: 5px 0px;
   position: relative;
   display: block;
@@ -6339,14 +6339,26 @@ footer .copyrights .footer-item_copyright img {
   margin: auto;
   transition: 0.2s ease-in-out;
 }
-.blog .blog-content li span {
+.blog .blog-content li .date {
+  font-weight: bold;
+  color: #05595B;
+}
+.blog .blog-content li .blog-tag {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  flex-wrap: wrap;
+}
+.blog .blog-content li .blog-tag span {
   position: relative;
   display: inline-block;
   color: #bda700;
   width: fit-content;
   font-size: 14px;
   font-weight: 500;
-  margin-left: 20px;
+  margin: 0px 5px 5px 0px;
+  border: 1px solid #bda700;
+  padding: 3px 10px;
 }
 .blog .blog-content li img {
   width: 100%;

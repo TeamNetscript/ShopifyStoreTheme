@@ -439,7 +439,7 @@ body {
               display: block;
 
               a{
-                color: #000;
+                color: $text-color;
                 padding: 5px 0px;
                 position: relative;
                 display: block;
@@ -5460,14 +5460,27 @@ footer{
           transition: 0.2s ease-in-out;
         }
       }
-      span{
+      .date{
+        font-weight: bold;
+        color: $primary-green;
+      }
+      .blog-tag{
         position: relative;
-        display: inline-block;
-        color: #bda700;
-        width: fit-content;
-        font-size: 14px;
-        font-weight: 500;
-        margin-left: 20px;
+        display: flex;
+        padding-left: 20px;
+        flex-wrap: wrap;
+
+        span{
+          position: relative;
+          display: inline-block;
+          color: #bda700;
+          width: fit-content;
+          font-size: 14px;
+          font-weight: 500;
+          margin: 0px 5px 5px 0px;
+          border: 1px solid #bda700;
+          padding: 3px 10px;
+        }
       }
       img{
         width: 100%;
