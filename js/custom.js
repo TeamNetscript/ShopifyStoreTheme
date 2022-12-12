@@ -18,7 +18,7 @@ window.onclick = function(event) {
   else if (event.target == saveModal) {
     saveModal.style.display = "none";
   }
-} 
+}
 
 // Liked products
 var saveModal = document.getElementById("mySave");
@@ -30,7 +30,6 @@ savebtn.onclick = function() {
 saveclose.onclick = function() {
   saveModal.style.display = "none";
 }
- 
 
 // mobile menu
 var mobile_menu = document.getElementById("mobileNav");
@@ -45,7 +44,6 @@ span1.onclick = function() {
   mobile_menu.classList.remove("js-drawer-open");
   mobile_menu.classList.add("js-drawer-close");
 }
- 
 
 // Main slider
 $('.hero_slider').slick({
