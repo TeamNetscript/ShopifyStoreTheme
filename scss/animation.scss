@@ -37,3 +37,33 @@
 .appear-delay-2{transition:transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.22s,opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.32s;}
 
 .appear-delay-1{transition:transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s,opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;}
+
+
+.js-drawer-close{
+  -webkit-animation-name: shadow_back;
+  -webkit-animation-duration: 0.8s;
+  animation-name: shadow_back;
+  animation-duration: 0.8s;
+  transition: all 0.5s;
+  width: 0px;
+}
+@-webkit-keyframes shadow_back {
+  from {
+  	left:0; 
+  	opacity:1;
+  }
+  to {
+  	left:-300px; 
+  	opacity:0;
+  }
+} 
+@-webkit-keyframes shadow_back {
+  from {
+  	left:0;
+  	opacity:1;
+  }
+  to {
+  	left:-300px;
+  	opacity:0;
+  }
+}

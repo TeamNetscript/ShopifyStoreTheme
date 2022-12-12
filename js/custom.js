@@ -26,7 +26,7 @@ var savebtn = document.getElementById("mySavebtn");
 var saveclose = document.getElementsByClassName("saveClose")[0];
 savebtn.onclick = function() {
   saveModal.style.display = "block";
-} 
+}
 saveclose.onclick = function() {
   saveModal.style.display = "none";
 }
