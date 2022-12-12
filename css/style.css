@@ -768,6 +768,7 @@ body {
   padding: 10px 0px;
   margin-bottom: 5px;
   color: #252525;
+  line-height: 1.3;
 }
 .header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature a:hover img {
   border: 1px solid #0a595b;
