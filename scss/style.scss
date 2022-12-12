@@ -400,7 +400,8 @@ body {
             .nav_Drop_Link{
               padding: 0px 10px;
               max-width: 250px;
-              overflow: hidden;   
+              overflow: hidden;  
+              width: 100%; 
 
               img{
                 width:  100%;
@@ -427,6 +428,39 @@ body {
                   content: "";
                   padding: 0px;
                   margin: 0px;
+                }
+              }
+              .product-feature{
+                position: relative;
+                display: block;
+
+                a{
+                  position: relative;
+                  display: block;
+                  padding: 0px;
+                  margin: 0px;
+                  text-align: center;
+
+                  img{
+                    width: 100%;
+                    height: auto;
+                    padding: 5px;
+                    border: 1px solid #e4f3ef;
+                    box-sizing: border-box;
+                    max-width: 210px;
+                    transition: 0.2s ease-in-out;
+                  }
+                  h4{
+                    position: relative;
+                    font-size: 16px;
+                    padding: 10px 0px;
+                    margin-bottom: 5px;
+                    color: #252525;
+                  }
+
+                  &:hover img{
+                    border: 1px solid #0a595b;
+                  }
                 }
               }
             } 
@@ -562,7 +596,7 @@ body {
           input{
             position: relative;
             width:  100%;
-            padding: 15px 25px;
+            padding: 15px 80px 15px 25px;
             max-height: 50px;
             font-size: 14px;
             border:  0px;
@@ -1491,7 +1525,7 @@ body {
             .nav_Drop_Link{
               padding: 0px 10px;
               max-width: 250px;
-              overflow: hidden;   
+              overflow: hidden;  
 
               img{
                 width:  100%;
@@ -2424,7 +2458,7 @@ body {
                 input{
                   position: relative;
                   width:  100%;
-                  padding: 15px 25px;
+                  padding: 15px 80px 15px 25px;
                   max-height: 50px;
                   font-size: 14px;
                   border:  0px;
@@ -4977,7 +5011,7 @@ footer{
           } 
           .container input:checked ~ .checkmark:after {
             display: block;
-          } 
+          }
           .container .checkmark:after {
             top: 0;
             left: 0;
@@ -5021,6 +5055,7 @@ footer{
 
             &:focus{
               outline: none;
+              border: 1px solid #000;
             }
           }
         }

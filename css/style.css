@@ -714,6 +714,7 @@ body {
   padding: 0px 10px;
   max-width: 250px;
   overflow: hidden;
+  width: 100%;
 }
 .header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link img {
   width: 100%;
@@ -740,6 +741,36 @@ body {
   content: "";
   padding: 0px;
   margin: 0px;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature {
+  position: relative;
+  display: block;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature a img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #e4f3ef;
+  box-sizing: border-box;
+  max-width: 210px;
+  transition: 0.2s ease-in-out;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature a h4 {
+  position: relative;
+  font-size: 16px;
+  padding: 10px 0px;
+  margin-bottom: 5px;
+  color: #252525;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper .nav_Drop_Link .product-feature a:hover img {
+  border: 1px solid #0a595b;
 }
 .header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper ul {
   display: block;
@@ -875,7 +906,7 @@ body {
 .header_standred .main-div .search-bar form label input {
   position: relative;
   width: 100%;
-  padding: 15px 25px;
+  padding: 15px 80px 15px 25px;
   max-height: 50px;
   font-size: 14px;
   border: 0px;
@@ -3016,7 +3047,7 @@ body {
 .searchMain .search_Body .saveDrawer_Items .savwItem_Wrapper .saveItem .search-bar form label input {
   position: relative;
   width: 100%;
-  padding: 15px 25px;
+  padding: 15px 80px 15px 25px;
   max-height: 50px;
   font-size: 14px;
   border: 0px;
@@ -5874,6 +5905,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .collection .collection-wrapper .collection-filter .collection-price label input:focus {
   outline: none;
+  border: 1px solid #000;
 }
 .collection .collection-wrapper .collection-filter .collection-color {
   position: relative;

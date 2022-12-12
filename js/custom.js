@@ -203,7 +203,7 @@ $(function() {
   });
 
   $(document).click(function(e) {
-    var target = e.target; 
+    var target = e.target;
     if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
       { $('.dropdown').slideUp(); }
   });
@@ -218,8 +218,8 @@ $(function() {
   $(document).mouseleave(function() { 
     $(this).next('.dropdown-desktop').slideUp();
   });
-  $(document).click(function(e) { 
-    var target = e.target; 
+  $(document).click(function(e) {
+    var target = e.target;
     if (!$(target).is('.dropdown-toggle_desktop') && !$(target).parents().is('.dropdown-toggle_desktop')) 
       { $('.dropdown-desktop').slideUp(); }
   });
