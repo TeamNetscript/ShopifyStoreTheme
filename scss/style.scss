@@ -422,7 +422,7 @@ body {
           min-width:  100%;
           width: 100%;
           background-color: #fcfffe;
-          padding: 20px 10px;
+          padding: 30px 10px 50px 10px;
           left: 0px;
           z-index: 2;
 
@@ -1004,7 +1004,7 @@ body {
           position: relative;
           min-width:  100%;
           width: 100%;
-          padding: 20px 0px;
+          padding: 30px 10px 50px 10px;
           z-index: 2; 
 
           .nav_Drop_Wrapper{
@@ -1504,7 +1504,7 @@ body {
           min-width:  100%;
           width: 1440px;
           background-color: #fcfffe;
-          padding: 20px 10px;
+          padding: 30px 10px 50px 10px;
           left: 50%;
           z-index: 2;
           transform: translate(-50%, 0);
@@ -1938,8 +1938,8 @@ body {
       }
     }
     .slick-slide{
-      position:  relative;
-      max-height: 700px;
+      position: relative;
+      max-height: 650px;
 
       .slider_container{
         position: absolute;
