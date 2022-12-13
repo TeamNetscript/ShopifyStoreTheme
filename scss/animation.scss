@@ -67,3 +67,46 @@
   	opacity:0;
   }
 }
+
+@keyframes desktop_menu {
+  from {bottom: 0px; opacity:0;}
+  to {bottom:0; opacity:1;}
+}
+@-webkit-keyframes desktop_menu {
+  from {bottom: 0px; opacity:0} 
+  to {bottom:0; opacity:1}
+}
+@keyframes desktop_menu {
+  from {bottom: 0px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+
+.appear-delay-2 {
+  transition: transform 1s cubic-bezier(.165,.84,.44,1) .28s,opacity 1s cubic-bezier(.165,.84,.44,1) .38s;
+}
+.appear-animation{
+  opacity: 0;
+  transform: translateY(60px);
+}
+.js-drawer-open-desktop {
+  -webkit-animation-name: desktop_menu;
+  -webkit-animation-duration: 0.2s;
+  animation-name: desktop_menu;
+  animation-duration: 0.2s;
+  transition: all 0.5s;
+  width: 100%;
+  display: block;
+
+  .appear-animation {
+    opacity: 1!important;
+    transform: translateY(0)!important;
+  }
+}
+.js-drawer-close{
+  -webkit-animation-name: shadow_back;
+  -webkit-animation-duration: 0.8s;
+  animation-name: shadow_back;
+  animation-duration: 0.8s;
+  transition: all 0.5s;
+  width: 0px;
+}

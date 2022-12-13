@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-light-background {
-  background-color: #E7F6F2;
+  background-color: #fcfffe;
 }
 
 .title {
@@ -265,6 +265,68 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
+@keyframes desktop_menu {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes desktop_menu {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes desktop_menu {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.appear-delay-2 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
+}
+
+.appear-animation {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.js-drawer-open-desktop {
+  -webkit-animation-name: desktop_menu;
+  -webkit-animation-duration: 0.2s;
+  animation-name: desktop_menu;
+  animation-duration: 0.2s;
+  transition: all 0.5s;
+  width: 100%;
+  display: block;
+}
+.js-drawer-open-desktop .appear-animation {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.js-drawer-close {
+  -webkit-animation-name: shadow_back;
+  -webkit-animation-duration: 0.8s;
+  animation-name: shadow_back;
+  animation-duration: 0.8s;
+  transition: all 0.5s;
+  width: 0px;
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
@@ -728,11 +790,10 @@ body {
   position: absolute;
   min-width: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: #fcfffe;
   padding: 20px 10px;
   left: 0px;
   z-index: 2;
-  box-shadow: 7px 5px 50px 0px rgba(74, 74, 74, 0.0901960784);
 }
 .header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper {
   position: relative;
@@ -1442,11 +1503,10 @@ body {
   position: absolute;
   min-width: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: #fcfffe;
   padding: 20px 20px;
   left: 0px;
   z-index: 2;
-  box-shadow: 7px 5px 50px 0px rgba(74, 74, 74, 0.0901960784);
 }
 .header_standred_dark .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper {
   position: relative;
@@ -1888,11 +1948,10 @@ body {
   position: absolute;
   min-width: 100%;
   width: 1440px;
-  background-color: #fff;
+  background-color: #fcfffe;
   padding: 20px 10px;
   left: 50%;
   z-index: 2;
-  box-shadow: 7px 5px 50px 0px rgba(74, 74, 74, 0.0901960784);
   transform: translate(-50%, 0);
 }
 @media (max-width: 1440px) {
@@ -4782,6 +4841,7 @@ footer .copyrights .footer-item_copyright img {
   right: 0;
   margin: 0 auto;
   transform: translate(-47%, 25%);
+  border-radius: 10px;
 }
 .promotion .promo-wrapper .promo-image .promo-tip .promo-tip_content:before {
   content: "";

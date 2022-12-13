@@ -223,21 +223,26 @@ $(function() {
 // dropdown menu desktop
 $(function() {
   $('.dropdown-toggle_desktop').mouseover(function(){
-    $(this).next('.dropdown-desktop').slideDown();
+    $(this).find('.dropdown-desktop').fadeIn(50);
+    $('.nav_Drop_Wrapper' ).addClass( 'js-drawer-open-desktop' );
   });
 
-  $(document).mouseleave(function() { 
-    $(this).next('.dropdown-desktop').slideUp();
+  $('.dropdown-toggle_desktop').mouseleave(function() { 
+    $(this).find('.dropdown-desktop').fadeOut(500);
+    $('.nav_Drop_Wrapper' ).removeClass( 'js-drawer-open-desktop' );
   });
   $(document).click(function(e) {
     var target = e.target;
     if (!$(target).is('.dropdown-toggle_desktop') && !$(target).parents().is('.dropdown-toggle_desktop')) 
-      { $('.dropdown-desktop').slideUp(); }
+      {
+        $('.dropdown-desktop').slideUp();
+        $('.nav_Drop_Wrapper' ).removeClass( 'js-drawer-open-desktop' );
+      }
   });
 });
 
 // footer menu toggle 
-$('.footer-item_nav h3').click(function() { 
+$('.footer-item_nav h3').click(function() {
   $(this).next('.footer-item-toggle').slideToggle();
 });
 
