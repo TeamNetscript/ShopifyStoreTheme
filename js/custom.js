@@ -57,6 +57,17 @@ $('.hero_slider').slick({
   arrows: false
 });
 
+$('.hero_sliderx').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  centerMode: false,
+  focusOnSelect: true,
+  cssEase: 'linear',
+  fade: true,
+  arrows: false
+});
+
 // Featured Products Home Page
 $('.featured-item_list').slick({
   slidesToShow: 4,
