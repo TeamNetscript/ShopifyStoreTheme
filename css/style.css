@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-light-background {
-  background-color: #fcfffe;
+  background-color: #E7F6F2;
 }
 
 .title {
@@ -5097,7 +5097,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .product-detail .product-details_wrapper .product-description .panel {
   padding: 0px 20px;
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #f1f1f1;
   max-height: 0;
   overflow: hidden;
   background-color: #f8fcfb;
@@ -5278,7 +5278,7 @@ footer .copyrights .footer-item_copyright img {
   font-size: 14px;
 }
 .product-detail .product-details_wrapper .product-details_content .price-detail {
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #f1f1f1;
   position: relative;
   display: flex;
   width: 100%;
@@ -6200,7 +6200,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .faq .faq-wrapper .product-description .panel {
   padding: 0px 20px;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f1f1f1;
   max-height: 0;
   overflow: hidden;
   background-color: #f8fcfb;
