@@ -327,6 +327,35 @@ h1, h2, h3, h4, h5, h6 {
   width: 0px;
 }
 
+.div_on_scroll {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animate;
+  animation-duration: 0.8s;
+  transition: all 0.5s;
+  width: 0px;
+}
+
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
 * {
   font-family: "Inter", sans-serif;
 }
@@ -5275,7 +5304,6 @@ footer .copyrights .footer-item_copyright img {
 }
 .product-detail .product-details_wrapper .product-details_content form .quantity .productQuantity button, .product-detail .product-details_wrapper .product-details_content form .quantity .productQuantity input {
   position: relative;
-  padding: 10px;
   border: 0px;
   background-color: #fff;
   text-align: center;
@@ -5285,9 +5313,14 @@ footer .copyrights .footer-item_copyright img {
 }
 .product-detail .product-details_wrapper .product-details_content form .quantity .productQuantity button {
   cursor: pointer;
+  padding: 10px 15px;
+}
+.product-detail .product-details_wrapper .product-details_content form .quantity .productQuantity button:hover {
+  background-color: #E7F6F2;
 }
 .product-detail .product-details_wrapper .product-details_content form .quantity .productQuantity input {
   width: 100%;
+  padding: 10px;
 }
 .product-detail .product-details_wrapper .product-details_content form .color {
   position: relative;
@@ -5327,7 +5360,7 @@ footer .copyrights .footer-item_copyright img {
   position: relative;
   display: flex;
   height: auto;
-  gap: 5px;
+  gap: 10px;
 }
 .product-detail .product-details_wrapper .product-details_content form .size .size-content .size-wrapper .active {
   border: 2px solid #05595B !important;
@@ -5371,6 +5404,7 @@ footer .copyrights .footer-item_copyright img {
 .product-detail .product-details_wrapper .product-details_content form .size .size-content .size-check {
   color: #787878;
   text-decoration: underline;
+  font-size: 14px;
 }
 .product-detail .product-details_wrapper .product-details_content form .size .size-content .size-check:hover {
   color: #000;
@@ -5477,6 +5511,7 @@ footer .copyrights .footer-item_copyright img {
   transform-origin: left top;
   max-width: 100%;
   position: relative;
+  width: 100%;
 }
 .product-detail .product-details_wrapper .product-details_content form .buy-wrapper .buy-now button:hover {
   color: #05595B;

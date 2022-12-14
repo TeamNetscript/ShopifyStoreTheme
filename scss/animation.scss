@@ -110,3 +110,32 @@
   transition: all 0.5s;
   width: 0px;
 }
+
+.div_on_scroll{
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animate;
+  animation-duration: 0.8s;
+  transition: all 0.5s;
+  width: 0px;
+}
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px; 
+    opacity: 0;
+  }
+  to {
+    bottom: 0px; 
+    opacity: 1;
+  }
+} 
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px; 
+    opacity: 0;
+  }
+  to {
+    bottom: 0px; 
+    opacity: 1;
+  }
+}

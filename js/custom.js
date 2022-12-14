@@ -31,6 +31,17 @@ saveclose.onclick = function() {
   saveModal.style.display = "none";
 }
 
+function footerMenu(fmenu) {
+  if (fmenu.matches) {
+    document.body.style.backgroundColor = "";
+  } else {
+   document.body.style.backgroundColor = "";
+  }
+}
+var fmenu = window.matchMedia("(max-width: 700px)");
+footerMenu(fmenu);
+fmenu.addListener(footerMenu);
+
 // mobile menu
 var mobile_menu = document.getElementById("mobileNav");
 var btn1 = document.getElementById("hamButtton");
@@ -298,5 +309,31 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
+  });
+}
+
+// on scroll function
+var $animation_elements = $('.newsletter');
+var $window = $(window);
+$window.on('scroll', check_if_in_view);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('div_on_scroll');
+    } else {
+     
+    }
   });
 }

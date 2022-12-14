@@ -4369,7 +4369,6 @@ footer{
 
             button, input{
               position: relative;
-              padding: 10px;
               border:  0px;
               background-color: $white-background;
               text-align: center;
@@ -4380,9 +4379,15 @@ footer{
             }
             button{
               cursor: pointer;
+              padding: 10px 15px;
+
+              &:hover{
+                background-color: #E7F6F2;
+              }
             }
             input{
               width:  100%;
+              padding: 10px;
             }
           }
         }
@@ -4425,7 +4430,7 @@ footer{
               position: relative;
               display: flex;
               height: auto;
-              gap: 5px;
+              gap: 10px;
 
               .active{
                 border: 2px solid $primary-green!important;
@@ -4475,6 +4480,7 @@ footer{
             .size-check{
               color: $primary-text-grey;
               text-decoration: underline;
+              font-size: 14px;
 
               &:hover{
                 color: $black-color;
@@ -4560,6 +4566,7 @@ footer{
 
             button{
               @include aLink;
+              width: 100%;
             }
           }
         }
