@@ -308,12 +308,12 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 
 // on scroll function
-var $animation_elements = $('.newsletter');
+var $animation_elements = $('.animateToTop');
 var $window = $(window);
 $window.on('scroll', check_if_in_view);
 
@@ -336,4 +336,12 @@ function check_if_in_view() {
      
     }
   });
+}
+
+// On load animation
+var $animation = $('.animate');
+$window.on('load', check_if_in_load);
+
+function check_if_in_load() {
+  $animation.addClass('loadAnimate');
 }

@@ -175,7 +175,34 @@
   animation-name: animate;
   animation-duration: 0.8s;
   transition: all 0.5s;
-  width: 0px;
+}
+
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+.loadAnimate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.9s;
+  animation-name: animate;
+  animation-duration: 0.9s;
+  transition: all 0.9s;
 }
 
 @-webkit-keyframes animate {

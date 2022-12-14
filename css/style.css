@@ -333,7 +333,34 @@ h1, h2, h3, h4, h5, h6 {
   animation-name: animate;
   animation-duration: 0.8s;
   transition: all 0.5s;
-  width: 0px;
+}
+
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+.loadAnimate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.9s;
+  animation-name: animate;
+  animation-duration: 0.9s;
+  transition: all 0.9s;
 }
 
 @-webkit-keyframes animate {
@@ -877,6 +904,9 @@ body {
   position: relative;
   display: block;
   font-size: 14px;
+}
+.header_standred .nav-bar .desktop_nav .nav_drop .nav_Drop_Wrapper li a:hover {
+  color: #252525;
 }
 .header_standred .nav-bar .desktop_nav .icons {
   position: relative;

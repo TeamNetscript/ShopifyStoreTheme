@@ -478,6 +478,10 @@ body {
                 position: relative;
                 display: block;
                 font-size: 14px;
+
+                &:hover{
+                  color: #252525;
+                }
               }
             }
           } 
