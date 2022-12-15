@@ -7595,6 +7595,76 @@ footer .copyrights .footer-item_copyright img {
   padding: 5px 0px;
 }
 
+.inlineSec {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+.inlineSec .container {
+  position: relative;
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.inlineSec .inlineSec-wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.inlineSec .size25, .inlineSec .size33, .inlineSec .size50, .inlineSec .size66, .inlineSec .size75, .inlineSec .size75, .inlineSec .size100 {
+  position: relative;
+  display: table-cell;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.inlineSec .size25 .inlineSec-content, .inlineSec .size33 .inlineSec-content, .inlineSec .size50 .inlineSec-content, .inlineSec .size66 .inlineSec-content, .inlineSec .size75 .inlineSec-content, .inlineSec .size75 .inlineSec-content, .inlineSec .size100 .inlineSec-content {
+  padding: 0px 15%;
+  position: relative;
+  display: block;
+}
+.inlineSec .size25 p, .inlineSec .size25 li, .inlineSec .size25 span, .inlineSec .size33 p, .inlineSec .size33 li, .inlineSec .size33 span, .inlineSec .size50 p, .inlineSec .size50 li, .inlineSec .size50 span, .inlineSec .size66 p, .inlineSec .size66 li, .inlineSec .size66 span, .inlineSec .size75 p, .inlineSec .size75 li, .inlineSec .size75 span, .inlineSec .size75 p, .inlineSec .size75 li, .inlineSec .size75 span, .inlineSec .size100 p, .inlineSec .size100 li, .inlineSec .size100 span {
+  line-height: 1.5;
+  color: #6e6e6e;
+  font-size: 14px;
+}
+.inlineSec .size25 h1, .inlineSec .size25 h2, .inlineSec .size25 h3, .inlineSec .size25 h4, .inlineSec .size25 h5, .inlineSec .size25 h6, .inlineSec .size33 h1, .inlineSec .size33 h2, .inlineSec .size33 h3, .inlineSec .size33 h4, .inlineSec .size33 h5, .inlineSec .size33 h6, .inlineSec .size50 h1, .inlineSec .size50 h2, .inlineSec .size50 h3, .inlineSec .size50 h4, .inlineSec .size50 h5, .inlineSec .size50 h6, .inlineSec .size66 h1, .inlineSec .size66 h2, .inlineSec .size66 h3, .inlineSec .size66 h4, .inlineSec .size66 h5, .inlineSec .size66 h6, .inlineSec .size75 h1, .inlineSec .size75 h2, .inlineSec .size75 h3, .inlineSec .size75 h4, .inlineSec .size75 h5, .inlineSec .size75 h6, .inlineSec .size75 h1, .inlineSec .size75 h2, .inlineSec .size75 h3, .inlineSec .size75 h4, .inlineSec .size75 h5, .inlineSec .size75 h6, .inlineSec .size100 h1, .inlineSec .size100 h2, .inlineSec .size100 h3, .inlineSec .size100 h4, .inlineSec .size100 h5, .inlineSec .size100 h6 {
+  font-size: 24px;
+  line-height: 1.3;
+}
+.inlineSec .size25 h1, .inlineSec .size25 h2, .inlineSec .size25 h3, .inlineSec .size25 h4, .inlineSec .size25 h5, .inlineSec .size25 h6, .inlineSec .size25 p, .inlineSec .size25 span, .inlineSec .size25 ul, .inlineSec .size25 li, .inlineSec .size33 h1, .inlineSec .size33 h2, .inlineSec .size33 h3, .inlineSec .size33 h4, .inlineSec .size33 h5, .inlineSec .size33 h6, .inlineSec .size33 p, .inlineSec .size33 span, .inlineSec .size33 ul, .inlineSec .size33 li, .inlineSec .size50 h1, .inlineSec .size50 h2, .inlineSec .size50 h3, .inlineSec .size50 h4, .inlineSec .size50 h5, .inlineSec .size50 h6, .inlineSec .size50 p, .inlineSec .size50 span, .inlineSec .size50 ul, .inlineSec .size50 li, .inlineSec .size66 h1, .inlineSec .size66 h2, .inlineSec .size66 h3, .inlineSec .size66 h4, .inlineSec .size66 h5, .inlineSec .size66 h6, .inlineSec .size66 p, .inlineSec .size66 span, .inlineSec .size66 ul, .inlineSec .size66 li, .inlineSec .size75 h1, .inlineSec .size75 h2, .inlineSec .size75 h3, .inlineSec .size75 h4, .inlineSec .size75 h5, .inlineSec .size75 h6, .inlineSec .size75 p, .inlineSec .size75 span, .inlineSec .size75 ul, .inlineSec .size75 li, .inlineSec .size75 h1, .inlineSec .size75 h2, .inlineSec .size75 h3, .inlineSec .size75 h4, .inlineSec .size75 h5, .inlineSec .size75 h6, .inlineSec .size75 p, .inlineSec .size75 span, .inlineSec .size75 ul, .inlineSec .size75 li, .inlineSec .size100 h1, .inlineSec .size100 h2, .inlineSec .size100 h3, .inlineSec .size100 h4, .inlineSec .size100 h5, .inlineSec .size100 h6, .inlineSec .size100 p, .inlineSec .size100 span, .inlineSec .size100 ul, .inlineSec .size100 li {
+  position: relative;
+  color: #000;
+  margin-bottom: 10px;
+}
+.inlineSec .size25 img, .inlineSec .size33 img, .inlineSec .size50 img, .inlineSec .size66 img, .inlineSec .size75 img, .inlineSec .size75 img, .inlineSec .size100 img {
+  width: 100%;
+  height: auto;
+}
+.inlineSec .size25 {
+  width: 25%;
+}
+.inlineSec .size33 {
+  width: 33%;
+}
+.inlineSec .size50 {
+  width: 50%;
+}
+.inlineSec .size66 {
+  width: 66%;
+}
+.inlineSec .size75 {
+  width: 75%;
+}
+.inlineSec .size100 {
+  width: 100%;
+}
+
 .skelton {
   animation: skeleton-loading 1s linear infinite alternate;
 }
