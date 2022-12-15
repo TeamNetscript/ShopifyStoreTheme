@@ -393,6 +393,8 @@ button {
 
 p {
   font-size: 14px;
+  line-height: 1.5;
+  color: #6e6e6e;
 }
 
 body {
