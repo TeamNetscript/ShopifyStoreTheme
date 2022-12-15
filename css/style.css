@@ -156,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 
+button {
+  border: 0px;
+}
+
 .appear-delay-20 {
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.3s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.4s;
 }
@@ -2408,7 +2412,6 @@ body {
 }
 .cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info .cartQuantity button, .cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info .cartQuantity input {
   position: relative;
-  padding: 10px;
   border: 0px;
   background-color: #fff;
   text-align: center;
@@ -2418,9 +2421,14 @@ body {
 }
 .cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info .cartQuantity button {
   cursor: pointer;
+  padding: 10px 15px;
+}
+.cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info .cartQuantity button:hover {
+  background-color: #E7F6F2;
 }
 .cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info .cartQuantity input {
   width: 100%;
+  padding: 10px;
 }
 .cartDrawer .drawer_Body .cartDrawer_Items .cartItem_Wrapper .cartItem .cartItem_Info a {
   position: relative;
@@ -6685,6 +6693,7 @@ footer .copyrights .footer-item_copyright img {
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  border: 0px;
 }
 .collection .collection-products_wrapper .featured-title_content .featured-title {
   font-size: 16px;

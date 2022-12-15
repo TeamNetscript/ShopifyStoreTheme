@@ -1839,7 +1839,6 @@ body {
 
               button, input{
                 position: relative;
-                padding: 10px;
                 border:  0px;
                 background-color: $white-background;
                 text-align: center;
@@ -1850,9 +1849,15 @@ body {
               }
               button{
                 cursor: pointer;
+                padding: 10px 15px;
+
+                &:hover{
+                  background-color: #E7F6F2;
+                }
               }
               input{
-                width:  100%;
+                width: 100%;
+                padding: 10px;
               }
             }
             a{
@@ -5591,6 +5596,7 @@ footer{
           font-size: 14px;
           text-transform: uppercase;
           cursor: pointer;
+          border: 0px;
         }
       }
     }
