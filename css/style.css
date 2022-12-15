@@ -7594,6 +7594,18 @@ footer .copyrights .footer-item_copyright img {
   padding: 5px 0px;
 }
 
+.align-top {
+  vertical-align: top;
+}
+
+.align-center {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
 .inlineSec {
   position: relative;
   display: flex;
@@ -7620,7 +7632,6 @@ footer .copyrights .footer-item_copyright img {
   position: relative;
   display: table-cell;
   box-sizing: border-box;
-  vertical-align: top;
 }
 .inlineSec .size25 .inlineSec-content, .inlineSec .size33 .inlineSec-content, .inlineSec .size50 .inlineSec-content, .inlineSec .size66 .inlineSec-content, .inlineSec .size75 .inlineSec-content, .inlineSec .size75 .inlineSec-content, .inlineSec .size100 .inlineSec-content {
   padding: 0px 15%;

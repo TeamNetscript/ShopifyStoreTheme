@@ -6388,6 +6388,9 @@ footer{
     }
   }
 }
+.align-top{ vertical-align:top; }
+.align-center{ vertical-align:middle; }
+.align-bottom{ vertical-align:bottom; }
 .inlineSec{
   @include main-div;
   padding: 50px 0px;
@@ -6407,7 +6410,6 @@ footer{
     position: relative;
     display: table-cell;
     box-sizing: border-box;
-    vertical-align: top;
 
     .inlineSec-content{
       padding: 0px 15%;
