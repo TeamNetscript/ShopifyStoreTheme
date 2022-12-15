@@ -33,7 +33,7 @@ body {
     align-items: center;
 
     .notification{
-      flex:  40%;
+      flex: 40%;
       text-align: center;
 
       @media (max-width:  $breakpoint-tabs){
@@ -3248,7 +3248,6 @@ footer{
             font-size: 14px;
             text-transform: uppercase;
             cursor: pointer;
-            border: 0px;
           }
         }
       }
@@ -5072,6 +5071,7 @@ footer{
       }
       p{
         line-height: 1.2;
+        color: #fff;
       }
       .aLink{
         @include aLink;

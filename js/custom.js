@@ -31,17 +31,6 @@ saveclose.onclick = function() {
   saveModal.style.display = "none";
 }
 
-function footerMenu(fmenu) {
-  if (fmenu.matches) {
-    document.body.style.backgroundColor = "";
-  } else {
-   document.body.style.backgroundColor = "";
-  }
-}
-var fmenu = window.matchMedia("(max-width: 700px)");
-footerMenu(fmenu);
-fmenu.addListener(footerMenu);
-
 // mobile menu
 var mobile_menu = document.getElementById("mobileNav");
 var btn1 = document.getElementById("hamButtton");
@@ -253,9 +242,18 @@ $(function() {
 });
 
 // footer menu toggle 
-$('.footer-item_nav h3').click(function() {
-  $(this).next('.footer-item-toggle').slideToggle();
-});
+
+
+function footerMenu(fmenu) {
+  if (fmenu.matches) {
+    $('.footer-item_nav h3').click(function() {
+      $(this).next('.footer-item-toggle').slideToggle();
+    });
+  } else { }
+}
+var fmenu = window.matchMedia("(max-width: 768px)");
+footerMenu(fmenu);
+fmenu.addListener(footerMenu);
 
 // signle product homepage
 $('.product-image_carousal').slick({

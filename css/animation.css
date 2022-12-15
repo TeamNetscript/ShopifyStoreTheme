@@ -93,7 +93,7 @@
     opacity: 1;
   }
   to {
-    left: -300px;
+    left: -250px;
     opacity: 0;
   }
 }
@@ -103,7 +103,7 @@
     opacity: 1;
   }
   to {
-    left: -300px;
+    left: -250px;
     opacity: 0;
   }
 }

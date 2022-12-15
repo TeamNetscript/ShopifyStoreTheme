@@ -255,7 +255,7 @@ button {
     opacity: 1;
   }
   to {
-    left: -300px;
+    left: -250px;
     opacity: 0;
   }
 }
@@ -265,7 +265,7 @@ button {
     opacity: 1;
   }
   to {
-    left: -300px;
+    left: -250px;
     opacity: 0;
   }
 }
@@ -4112,7 +4112,6 @@ footer .copyrights .footer-item_copyright img {
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
-  border: 0px;
 }
 .featured-Products .main-div .featured-Products_slides .featured-title_content .featured-title {
   font-size: 16px;
@@ -6115,6 +6114,7 @@ footer .copyrights .footer-item_copyright img {
 }
 .image-banner .image-banner_wrapper .image-banner_content p {
   line-height: 1.2;
+  color: #fff;
 }
 .image-banner .image-banner_wrapper .image-banner_content .aLink {
   font-size: 16px;
