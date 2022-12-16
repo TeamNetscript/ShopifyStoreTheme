@@ -1536,7 +1536,8 @@ body {
             .nav_Drop_Link{
               padding: 0px 10px;
               max-width: 250px;
-              overflow: hidden;  
+              overflow: hidden; 
+              width: 100%; 
 
               img{
                 width:  100%;
@@ -5287,6 +5288,13 @@ footer{
       margin: auto;
       border: 1px solid #ffffff73;
     }
+    @media( max-width: $breakpoint-tabs){
+      &:before{
+        width: 90%;
+        height: 90%;
+        border: 1px solid #fff;
+      }
+    }
   }
   .collection-wrapper{
     @include main-div;
@@ -5530,6 +5538,10 @@ footer{
       @include main-div;
       flex-wrap: wrap;
 
+      @media (max-width: $breakpoint-mobile_small){
+        gap: 10px;
+      }
+
       li{
         flex: 0 0 25%;
         max-width: 25%;
@@ -5539,6 +5551,11 @@ footer{
         @media (max-width: $breakpoint-tabs){
           flex: 0 0 50%;
           max-width: 50%;
+          padding: 0px 5px 5px 5px;
+        }
+        @media (max-width: $breakpoint-mobile_small){
+          flex: 0 0 100%;
+          max-width: 100%;
           padding: 0px 5px 10px 5px;
         }
       }
