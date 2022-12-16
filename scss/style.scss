@@ -207,6 +207,16 @@ body {
           box-sizing:  border-box;
           min-height: 100%;
           max-width: 100%;
+
+          .nav_drop_open{
+
+            @media (max-width: $breakpoint-tabs){
+              i{
+                position: absolute;
+                right: 0px;
+              }
+            }
+          }
         }
         /*main shadow to left*/
         @-webkit-keyframes shadow_back {
@@ -5069,6 +5079,7 @@ footer{
       p{
         line-height: 1.2;
         color: #fff;
+        padding-left: 10%;
       }
       .aLink{
         @include aLink;
@@ -5715,7 +5726,7 @@ footer{
         padding: 0px 15px;
       }
       button{
-        border: 1px solid #c9c9c9;
+        border: 1px solid #e8e8e1;
         padding: 10px 15px;
         background: transparent;
         text-transform: uppercase;

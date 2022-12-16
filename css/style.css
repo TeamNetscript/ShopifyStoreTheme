@@ -600,6 +600,12 @@ body {
   min-height: 100%;
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .header_standred .nav-bar .mobile_nav .mobile_nav_content .nav_drop_open i {
+    position: absolute;
+    right: 0px;
+  }
+}
 @-webkit-keyframes shadow_back {
   from {
     left: 0;
@@ -6112,6 +6118,7 @@ footer .copyrights .footer-item_copyright img {
 .image-banner .image-banner_wrapper .image-banner_content p {
   line-height: 1.2;
   color: #fff;
+  padding-left: 10%;
 }
 .image-banner .image-banner_wrapper .image-banner_content .aLink {
   font-size: 16px;
@@ -6815,7 +6822,7 @@ footer .copyrights .footer-item_copyright img {
   padding: 0px 15px;
 }
 .collection-banners .collection-banners_wrapper .collection-banners_item button {
-  border: 1px solid #c9c9c9;
+  border: 1px solid #e8e8e1;
   padding: 10px 15px;
   background: transparent;
   text-transform: uppercase;
