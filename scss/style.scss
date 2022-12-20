@@ -6350,6 +6350,175 @@ footer{
     }
   }
 }
+/*blog form*/
+.blog-form{
+  @include main-div;
+  padding: 50px 0px;
+  background-color: $body-color;
+
+  @media (max-width: $breakpoint-tabs){
+    padding: 30px 0px;
+  }
+
+  .container{
+    @include container;
+  }
+  .blog-form_content{
+    @include main-div;
+    flex-direction: column;
+  }
+  .blog-comment{
+    @include main-div;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    flex-direction: column;
+
+    article{
+      @include main-div;
+      background-color: $white-background;
+      padding: 15px 25px;
+      flex-direction: column;
+      margin-top: 15px;
+      box-sizing: border-box;
+
+      p{
+        margin-bottom: 25px;
+      }
+    }
+    .footer{
+      @include main-div;
+      text-align: right;
+      justify-content: flex-end;
+
+      span{
+        font-size: 14px;
+        position: relative;
+        padding-left: 25px;
+      }
+      .date{
+
+        &:before{
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          background-color: #05595B;
+          height: 5px;
+          width: 5px;
+          border-radius: 50px;
+          padding: 0px;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+  .blog-form_wrapper{
+    @include main-div; 
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto; 
+    width: 100%;
+  }
+  form{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+
+    span{
+      font-size: 12px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      letter-spacing: 2px;
+      color: #252525;
+    }
+    .row{
+      @include main-div;
+      gap: 15px;
+
+      @media (max-width: $breakpoint-tabs){
+        flex: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+      }
+
+      label{
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $breakpoint-tabs){
+          flex: 100%;
+          width: 100%;
+          box-sizing: border-box; 
+        }
+
+        input{
+          padding: 10px;
+          border: 1px solid #b5b5b5;
+          box-sizing: border-box;
+
+          &:focus{
+            outline: none;
+            border: 1px solid #000;
+          }
+        }
+      }
+    }
+    .column{
+      @include main-div;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      label{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        textarea{
+          padding: 10px;
+          border: 1px solid #b5b5b5;
+          box-sizing: border-box;
+
+          &:focus{
+            outline: none;
+            border: 1px solid #000;
+          }
+        }
+      }
+      button{
+        position: relative;
+        max-width: 90px;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        border: 0px;
+        cursor: pointer;
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
+      p{
+        color: #252525;
+        font-size: 13px;
+        padding-top: 20px;
+        line-height: 1.5;
+
+        @media (max-width: $breakpoint-tabs){
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 .blog-detail{
   @include main-div;
   padding: 50px 0px;
@@ -6372,6 +6541,8 @@ footer{
     .blog-content{
       @include main-div;
       flex-direction: column;
+      line-height: 1.5;
+      color: $text-color;
 
       img{
         width: 100%;
@@ -6391,8 +6562,9 @@ footer{
         font-weight: 500;
         text-decoration: underline;
       }
-      h3{
+      h3, h1, h2, h4{
         line-height: 1.3;
+        color: #000;
       }
       img{
         margin-top: 15px;
