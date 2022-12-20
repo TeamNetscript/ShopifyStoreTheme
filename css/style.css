@@ -7561,6 +7561,11 @@ footer .copyrights .footer-item_copyright img {
   gap: 10px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .blog .blog-wrapper_list .blog-content .blog-content_list {
+    padding-bottom: 15px;
+  }
+}
 .blog .blog-wrapper_list .blog-content li {
   flex: 100%;
   position: relative;
@@ -7576,6 +7581,7 @@ footer .copyrights .footer-item_copyright img {
 @media (max-width: 768px) {
   .blog .blog-wrapper_list .blog-content li {
     flex: 45%;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {

@@ -6364,6 +6364,10 @@ footer{
         justify-content: flex-start;
         gap: 10px;
         width: 100%;
+
+        @media(max-width: $breakpoint-tabs){
+          padding-bottom: 15px;
+        }
       }
       li{
         flex: 100%;
@@ -6379,6 +6383,7 @@ footer{
 
         @media(max-width: $breakpoint-tabs){
           flex: 45%;
+          flex-direction: column;
         }
         @media(max-width: $breakpoint-mobile){
           flex: 100%;
@@ -6392,7 +6397,7 @@ footer{
           width: 100%;
           max-width: 350px;
 
-          &:before{
+          &:before{ 
             content: "";
             position: absolute;
             left: 0px;
