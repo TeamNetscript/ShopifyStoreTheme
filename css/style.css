@@ -5517,6 +5517,11 @@ footer .copyrights .footer-item_copyright img {
   height: auto;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .product-detail .product-details_wrapper .product-details_content form .buy-wrapper {
+    gap: 10px;
+  }
+}
 .product-detail .product-details_wrapper .product-details_content form .buy-wrapper .add-cart {
   width: 50%;
   box-sizing: border-box;
@@ -5525,7 +5530,6 @@ footer .copyrights .footer-item_copyright img {
   font-size: 16px;
   color: #000;
   background-color: #E7F6F2;
-  min-height: 45px;
   padding: 10px 15px;
   border: 1px solid #E7F6F2;
   font-weight: 500;

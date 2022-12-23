@@ -4571,6 +4571,10 @@ footer{
           @include main-div;
           gap: 30px;
 
+          @media (max-width: $breakpoint-tabs){
+            gap: 10px;
+          }
+
           .add-cart{
             width: 50%;
             box-sizing: border-box;
