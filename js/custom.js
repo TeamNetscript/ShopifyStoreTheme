@@ -36,13 +36,14 @@ var mobile_menu = document.getElementById("mobileNav");
 var btn1 = document.getElementById("hamButtton");
 var span1 = document.getElementsByClassName("close_nav")[0];
 btn1.onclick = function() {
-  mobile_menu.style.display = "block";
+  mobile_menu.style.width = "100%";
   mobile_menu.classList.add("js-drawer-open");
   mobile_menu.classList.remove("js-drawer-close");
 }
 span1.onclick = function() {
   mobile_menu.classList.remove("js-drawer-open");
   mobile_menu.classList.add("js-drawer-close");
+  mobile_menu.style.width = "0%";
 }
 
 // Main slider

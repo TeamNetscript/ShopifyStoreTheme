@@ -570,7 +570,7 @@ body {
   width: 0px;
 }
 .header_standred .nav-bar .mobile_nav {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
   left: 0px;
@@ -580,6 +580,7 @@ body {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  width: 0;
   /*main shadow to left*/
   /*main from left*/
   /*main shadow from left*/
