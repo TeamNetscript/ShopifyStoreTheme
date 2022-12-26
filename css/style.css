@@ -668,7 +668,7 @@ body {
   }
 }
 .header_standred .nav-bar .mobile_nav .close_nav {
-  color: #000;
+  color: #05595B;
   position: absolute;
   right: 0px;
   top: 20px;
@@ -703,7 +703,7 @@ body {
   height: auto;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 30px;
   gap: 5px;
 }
 .header_standred .nav-bar .mobile_nav .icons ul li {
@@ -741,6 +741,7 @@ body {
 }
 .header_standred .nav-bar .mobile_nav ul li a i {
   font-size: 14px;
+  color: #05595B;
 }
 .header_standred .nav-bar .mobile_nav .appear-delay-2 {
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
@@ -1367,7 +1368,7 @@ body {
   }
 }
 .header_standred_dark .nav-bar .mobile_nav .close_nav {
-  color: #000;
+  color: #05595B;
   position: absolute;
   right: 0px;
   top: 20px;
@@ -1771,16 +1772,6 @@ body {
     opacity: 0;
   }
 }
-@keyframes shadow_left {
-  from {
-    left: -300px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
 @-webkit-keyframes animate_leftt {
   from {
     left: -300px;
@@ -1822,7 +1813,7 @@ body {
   }
 }
 .main-div-menu .mobile_nav .close_nav {
-  color: #000;
+  color: #05595B;
   position: absolute;
   right: 0px;
   top: 20px;
