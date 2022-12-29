@@ -6443,7 +6443,7 @@ footer .copyrights .footer-item_copyright img {
   height: 20px;
   width: 20px;
   background-color: #eee;
-  border-radius: 0px;
+  border-radius: 50px;
 }
 .collection .collection-wrapper .collection-filter .collection-avalible ul li .container:hover input ~ .checkmark {
   background-color: #ccc;
@@ -6462,9 +6462,9 @@ footer .copyrights .footer-item_copyright img {
 .collection .collection-wrapper .collection-filter .collection-avalible ul li .container .checkmark:after {
   top: 0;
   left: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 0%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
   background: white;
   right: 0;
   bottom: 0;
