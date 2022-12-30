@@ -15,6 +15,9 @@ p{
 body {
   background-color: $body-color;
 }
+.container{
+  @include container;
+} 
 .top-bar{
   @include main-div;
   background-color: $white-background;

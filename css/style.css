@@ -401,6 +401,15 @@ body {
   background-color: #F0F0F0;
 }
 
+.container {
+  position: relative;
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
 .top-bar {
   position: relative;
   display: flex;
