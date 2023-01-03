@@ -289,16 +289,6 @@ button {
     opacity: 1;
   }
 }
-@keyframes desktop_menu {
-  from {
-    bottom: 0px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
 .appear-delay-2 {
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
 }
@@ -349,7 +339,7 @@ button {
     opacity: 1;
   }
 }
-@-webkit-keyframes animate {
+@keyframes animate {
   from {
     bottom: -50px;
     opacity: 0;
@@ -6650,6 +6640,7 @@ footer .copyrights .footer-item_copyright img {
   .collection .collection-products_wrapper ul li {
     flex: 0 0 100%;
     max-width: 100%;
+    width: 100%;
     padding: 0px 5px 10px 5px;
   }
 }
