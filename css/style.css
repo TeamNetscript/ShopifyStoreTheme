@@ -433,6 +433,9 @@ body {
   flex: 40%;
   text-align: center;
 }
+.top-bar .main-div .notification p {
+  color: #05595B;
+}
 @media (max-width: 768px) {
   .top-bar .main-div .notification {
     flex: 100%;
@@ -492,6 +495,7 @@ body {
   border: 0px;
   font-size: 14px;
   background-color: #fff;
+  cursor: pointer;
 }
 .top-bar .main-div .currency form label select:focus {
   outline: none;
@@ -987,7 +991,7 @@ body {
   flex: 30%;
   display: none;
 }
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .header_standred .main-div .mobile_logo {
     display: block;
   }
@@ -1046,6 +1050,12 @@ body {
   border: 0px;
   border-radius: 50px;
   background-color: #fff;
+  max-width: 450px;
+}
+@media (max-width: 1024px) {
+  .header_standred .main-div .search-bar form label input {
+    max-width: 250px;
+  }
 }
 .header_standred .main-div .search-bar form label input:focus {
   outline: none;
@@ -3954,6 +3964,7 @@ footer .copyrights .footer-item_copyright img {
   text-transform: uppercase;
   line-height: 1;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 .featured-Products {
@@ -7391,7 +7402,7 @@ footer .copyrights .footer-item_copyright img {
   height: 2px;
   background-color: #05595B;
   border: 0px;
-  bottom: 0px;
+  bottom: -5px;
   margin: 0 auto;
   transform: translate(-50%, 0px);
 }
