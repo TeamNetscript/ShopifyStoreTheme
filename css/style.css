@@ -221,19 +221,19 @@ button {
 }
 
 .appear-delay-5 {
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
 }
 
 .appear-delay-4 {
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.34s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.44s;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.34s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.55s;
 }
 
 .appear-delay-3 {
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.45s;
 }
 
 .appear-delay-2 {
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.22s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.32s;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.22s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.35s;
 }
 
 .appear-delay-1 {
@@ -4195,15 +4195,18 @@ footer .copyrights .footer-item_copyright img {
   content: "";
   position: absolute;
   display: none;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 15px solid transparent;
   transition: 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  border-width: 15px;
+  box-sizing: border-box;
 }
 .featured-banner .featured-banner_content .featured-banner_item:hover::after {
   display: block;
