@@ -1969,6 +1969,24 @@ body {
       position: relative;
       max-height: 650px;
 
+      @media (max-width: $breakpoint-tabs){
+        max-height: 450px;
+        height: 450px;
+      }
+
+      img{
+
+        @media (max-width: $breakpoint-tabs){
+          display: block;
+          width: auto;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          min-width: 100%;
+        }
+      }
+
       .slider_container{
         position: absolute;
         top: 50%;
@@ -1978,25 +1996,40 @@ body {
         display: flex;
         flex-direction: column;
         right: 0;
-        width:  100%;
+        width: 100%;
         transform: translate(0%, -50%);
 
         @media (max-width: $breakpoint-laptop){
-          width:  80%;
+          width: 80%;
         }
-        @media (max-width:  $breakpoint-mobile_landscape){
+        @media (max-width: $breakpoint-tabs){
           position: relative;
           top: 0;
           transform: translate(0%, 0%);
           padding: 30px 0px;
+          box-sizing: border-box;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+
+            &:before{
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: rgb(0 0 0 / 18%);
+            }
         }
       }
       .slider_content{
         position: relative;
         max-width: 600px;
 
-          @media (max-width:  $breakpoint-tabs){
-            max-width: 480px;
+          @media (max-width: $breakpoint-tabs){
+            width: 90%;
+            margin: 0 auto;
           }
 
         p{
@@ -2071,10 +2104,6 @@ body {
       .slider_content{
         position: relative;
         max-width: 600px;
-
-          @media (max-width:  $breakpoint-tabs){
-            max-width: 480px;
-          }
 
         p{
           color: $primary-green;
@@ -3856,8 +3885,8 @@ footer{
     justify-content: space-between;
  
     @media (max-width: $breakpoint-mobile){
-      gap: 30px;
-      flex-wrap: nowrap;
+      gap: 10px;
+      flex-wrap: wrap;
       align-items: center;
       flex-direction: column;
     }
@@ -3867,6 +3896,19 @@ footer{
       gap: 20px;
       align-items: center;
       flex: 25%;
+
+      @media (max-width: $breakpoint-mobile){
+        position: relative;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        flex: 45%;
+        box-sizing: border-box;
+        justify-content: center;
+        width: auto;
+      }
 
       img{
         position: relative;
