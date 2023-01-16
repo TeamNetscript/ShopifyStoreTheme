@@ -2,13 +2,14 @@
 @import "color-theme";
 @import "global-classes";
 @import "animation";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 *{
-  font-family: 'Inter', sans-serif;
+/*  font-family: 'Inter', sans-serif;*/
+  font-family: 'Nunito', sans-serif;
 }
 p{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: $text-color;
 }
@@ -3140,6 +3141,7 @@ footer{
   text-transform: uppercase;
   line-height: 1;
   display: inline-block;
+  letter-spacing: 2px;
 }
 .tag{
   position: relative;
@@ -3354,9 +3356,10 @@ footer{
     }
 
     .featured-banner_item{
-      max-height: 500px;
+      max-height: 700px;
       flex:  50%;
       position: relative;
+      height: 100%;
 
       &:before{
         content:  '';
@@ -3369,7 +3372,7 @@ footer{
         right: 0;
         bottom: 0;
         margin: auto;
-        background-color: rgb(64 72 47 / 25%);
+        background-color: rgb(17 20 19 / 31%);
       }
       &:after{
           content: "";
@@ -3413,6 +3416,11 @@ footer{
         bottom: 0;
         margin: auto;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
 
         h2, p{
           color: $white-color;
@@ -3420,18 +3428,19 @@ footer{
         h2{
           font-size: 24px;
           text-transform: uppercase;
-          font-weight:  400;
-          line-height: 1.5;
+          font-weight: 400;
+          line-height: 1;
         }
         p{
-          font-size: 14px;
           line-height: 1.5;
-          padding: 5px 0px;
+          padding: 0px;
+          width: 100%;
+          max-width: 450px;
         }
         .aLink{
           @include aLink;
           display: inline-block;
-          margin: 15px auto 0 auto;
+          margin: 0px auto 0 auto;
           max-width: 150px;
         }
       }
@@ -3568,7 +3577,7 @@ footer{
         }
 
         h2{
-          font-size: 16px;
+          font-size: 18px;
           line-height: 1;
 
           a{
@@ -3604,6 +3613,7 @@ footer{
     h2{
       font-size: 34px;
       line-height: 1.1;
+      letter-spacing: 5px;
     }
     p{
       font-size: 14px;
@@ -4013,7 +4023,7 @@ footer{
           right: 0;
           margin: 0 auto;
           transform: translate(-47%, 25%);
-          border-radius: 10px;
+          border-radius: 0px;
 
           &:before{
             content: "";
@@ -4165,6 +4175,12 @@ footer{
     @media (max-width: $breakpoint-tabs){
       flex-direction: column;
     }
+    .main_product_details{
+      box-sizing: border-box;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+    }
     .product-description{
       margin-top: 50px;
 
@@ -4218,16 +4234,17 @@ footer{
         }
       }
     }
-
     .product-details_image{
       width: 50%;
       box-sizing: border-box;
+      position: relative;
 
       img{
-        width: 90px;
+        width: 100px;
         height: auto;
         max-width: 100px;
         margin: 0 auto;
+        border: 1px solid transparent;
 
         @media (max-width: $breakpoint-tabs){
           width: 100%;
@@ -4243,7 +4260,7 @@ footer{
         justify-content: center;
 
         .slick-center img {
-          border: 1px solid #252525;
+          border: 1px solid #252525!important;
         }
         .slick-slide{
           margin: 5px 0px;
@@ -4305,12 +4322,12 @@ footer{
     .product-details_content{
       width: 50%;
       box-sizing: border-box;
+      position: relative;
 
       @media (max-width: $breakpoint-tabs){
         width: 100%;
       } 
       .detail-content{
-
         p{
           line-height: 1.5;
           color: $text-color;
@@ -4391,6 +4408,30 @@ footer{
           }
         }
       }
+      .review{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+
+        ul{
+          display: flex;
+          gap: 5px;
+        }
+        p{
+          color: $primary-text-grey;
+
+          a{
+            color: $black-color;
+            text-decoration: underline;
+          }
+        }
+      }
+      .title{
+        padding: 5px 0px 10px 0px;
+      }
       .price-detail{
         border-bottom: 1px solid #f1f1f1;
         @include main-div;
@@ -4399,28 +4440,7 @@ footer{
         padding: 10px 0px;
 
         .price{
-          color: $text-color;
           font-size: 18px;
-        }
-        .review{
-          position: relative;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          justify-content: space-between;
-
-          ul{
-            display: flex;
-            gap: 5px;
-          }
-          p{
-            color: $primary-text-grey;
-
-            a{
-              color: $black-color;
-              text-decoration: underline;
-            }
-          }
         }
       }
       form{
@@ -4469,24 +4489,34 @@ footer{
 
           .swatches{
             @include main-div;
-            gap: 5px;
+            gap: 10px;
+            flex-wrap: wrap;
 
             .swatches-label{
-              border-radius: 50px;
-              height: 32px;
-              width: 32px;
+              border-radius: 0px;
+              width: 80px;
+              height: 80px;
               position: relative;
-              border: 3px solid #fff;
-              box-shadow: 0px 2px 3px #a7a7a7;
+              padding: 5px;
+              box-sizing: border-box;
               transition: 0.2s ease-in-out;
+              border: 1px solid #d7d7d7;
 
               &:hover{
-                border: 3px solid $primary-green;
+                border: 1px solid $primary-green;
               }
 
               img{
                 width: 100%;
                 height: auto;
+              }
+              a{
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
               }
             }
           }
@@ -4495,6 +4525,26 @@ footer{
           position: relative;
           padding: 15px 0px 0px 0px;
 
+          .size_div{
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding-bottom: 15px;
+
+            .subtitle{
+              padding-bottom: 0px;
+            }
+            .size-check{
+              color: $primary-text-grey;
+              text-decoration: underline;
+              font-size: 14px;
+
+              &:hover{
+                color: $black-color;
+              }
+            }
+          }
           .size-content{
             gap: 15px;
 
@@ -4547,15 +4597,6 @@ footer{
                   width: 100%;
                   height: auto;
                 }
-              }
-            }
-            .size-check{
-              color: $primary-text-grey;
-              text-decoration: underline;
-              font-size: 14px;
-
-              &:hover{
-                color: $black-color;
               }
             }
           }
@@ -5133,7 +5174,6 @@ footer{
         display: block;
         font-size: 38px;
         line-height: 1.3;
-        font-weight: 300;
       }
       p{
         line-height: 1.2;
@@ -5678,7 +5718,7 @@ footer{
         button{
           background-color: $black-background;
           color: $white-color;
-          padding: 5px 10px;
+          padding: 10px 15px;
           font-size: 14px;
           text-transform: uppercase;
           cursor: pointer;
@@ -6320,7 +6360,6 @@ footer{
       &:hover .img-overlay:before{
         background-color: rgb(0 51 52 / 16%);
       }
-
       .img-overlay{
         position: relative;
         transition: 0.2s ease-in-out;
@@ -6401,7 +6440,6 @@ footer{
           background-color: #05595B;
           transition: 0.2s ease-in-out;
         }
-
         &:hover:before{
           width: 100%;
         }

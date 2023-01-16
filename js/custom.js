@@ -265,7 +265,7 @@ $('.product-image_carousal').slick({
   asNavFor: '.product-image_nav'
 });
 $('.product-image_nav').slick({
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 0,
   asNavFor: '.product-image_carousal',
   dots: false,
