@@ -2594,9 +2594,9 @@ body {
     padding: 0;
     border: 0px; 
     max-width: 450px;
-    -webkit-animation-name: liketop;
+    -webkit-animation-name: liketopp;
     -webkit-animation-duration: 0.4s;
-    animation-name: liketop;
+    animation-name: liketopp;
     animation-duration: 0.4s;
     width: 100%;
     border-radius: 6px;
@@ -2604,12 +2604,12 @@ body {
     box-shadow: 7px 5px 50px 0px rgb(74 74 74 / 9%);
   } 
   /* Add Animation */
-  @-webkit-keyframes liketop {
-    from {top: -40px; opacity:0} 
+  @-webkit-keyframes liketopp {
+    from {top: -25px; opacity:0}
     to {top:0; opacity:1}
   } 
-  @keyframes liketop {
-    from {top: -40px; opacity:0}
+  @keyframes liketopp {
+    from {top: -25px; opacity:0}
     to {top:0; opacity:1}
   } 
   .saveClose {
@@ -2624,7 +2624,7 @@ body {
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    line-height: 12px;
+    line-height: 14px;
     text-align: center;
   } 
   .saveClose:hover,
@@ -4165,8 +4165,8 @@ footer{
   background-color: $white-background;
   overflow: hidden;
 
-  .container{
-    @include container;
+  @media (max-width: $breakpoint-tabs){
+    padding: 30px 0px;
   }
   .product-details_wrapper{
     @include main-div;
@@ -4235,9 +4235,15 @@ footer{
       }
     }
     .product-details_image{
-      width: 50%;
+      width: 45%;
       box-sizing: border-box;
       position: relative;
+
+      .sticky-filter{
+        box-sizing: border-box;
+        position: sticky;
+        top: 0px;
+      }
 
       img{
         width: 100px;
@@ -4259,7 +4265,7 @@ footer{
         width: 100%;
         justify-content: center;
 
-        .slick-center img {
+        .slick-current img {
           border: 1px solid #252525!important;
         }
         .slick-slide{
@@ -4320,7 +4326,7 @@ footer{
       }
     } 
     .product-details_content{
-      width: 50%;
+      width: 55%;
       box-sizing: border-box;
       position: relative;
 
@@ -4433,7 +4439,6 @@ footer{
         padding: 5px 0px 10px 0px;
       }
       .price-detail{
-        border-bottom: 1px solid #f1f1f1;
         @include main-div;
         justify-content: space-between;
         align-items: center;
@@ -4441,6 +4446,7 @@ footer{
 
         .price{
           font-size: 18px;
+          color: $primary-green;
         }
       }
       form{

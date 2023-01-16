@@ -261,11 +261,11 @@ $('.product-image_carousal').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  fade: true,
+  fade: true, 
   asNavFor: '.product-image_nav'
 });
 $('.product-image_nav').slick({
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 0,
   asNavFor: '.product-image_carousal',
   dots: false,
@@ -274,22 +274,39 @@ $('.product-image_nav').slick({
   focusOnSelect: true,
   responsive: [
     {
+      breakpoint: 2540,
+      settings: {   
+        slidesToShow: 5,
+        centerMode: false,
+      }
+    },
+    {
+      breakpoint: 1440,
+      settings: {   
+        slidesToShow: 5,
+        centerMode: false,
+      }
+    },
+    {
       breakpoint: 1025,
       settings: {   
-        slidesToShow: 3
+        slidesToShow: 4,
+        centerMode: false,
       }
     },
     {
       breakpoint: 769,
       settings: {  
-        slidesToShow: 3
+        slidesToShow: 3,
+        centerMode: false,
       }
     },
     {
       breakpoint: 426,
       settings: { 
-        slidesToShow: 2,
-        arrows: true
+        slidesToShow: 3,
+        arrows: true,
+        centerMode: false,
       }
     }
   ]
