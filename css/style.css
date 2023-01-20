@@ -5938,6 +5938,12 @@ footer .copyrights .footer-item_copyright img {
 .product-detail .product-details_wrapper .product-details_content form .color .swatches .swatches-label:hover {
   border: 1px solid #05595B;
 }
+@media (max-width: 768px) {
+  .product-detail .product-details_wrapper .product-details_content form .color .swatches .swatches-label {
+    width: 60px;
+    height: 60px;
+  }
+}
 .product-detail .product-details_wrapper .product-details_content form .color .swatches .swatches-label img {
   width: 100%;
   height: auto;

@@ -4507,7 +4507,10 @@ footer{
               &:hover{
                 border: 1px solid $primary-green;
               }
-
+              @media (max-width: $breakpoint-tabs){
+                width: 60px;
+                height: 60px;
+              }
               img{
                 width: 100%;
                 height: auto;
@@ -4579,11 +4582,9 @@ footer{
                   border: 2px solid $primary-green;
                   background-color: $primary-green;
                 }
-
                 &:hover a{
                   color: $white-color;
                 }
-
                 a{
                   position: absolute;
                   display: flex;
