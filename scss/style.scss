@@ -5328,6 +5328,51 @@ footer{
   .container{
     @include container;
   }
+  .grid-view{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #33464133;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    .grid-title{
+
+      h2{
+        position: relative;
+        display: inline-block;
+        padding: 15px 25px;
+        border-right: 1px solid #dedede;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .grid-view_option{
+
+      ul{
+        margin-right: 5px;
+      }
+      li{
+        position: relative;
+        display: inline-block;
+        margin: 0px 5px;
+
+        button{
+          cursor: pointer;
+          background-color: transparent;
+          padding: 0px;
+
+          i{
+            color: #707e7a;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
   .collection-banner{
     @include main-div;
     margin: 0px 0px 50px 0px;

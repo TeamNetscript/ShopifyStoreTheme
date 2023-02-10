@@ -6881,6 +6881,42 @@ footer .copyrights .footer-item_copyright img {
   flex-direction: column;
   width: 90%;
 }
+.collection .grid-view {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px;
+  border: 1px solid rgba(51, 70, 65, 0.2);
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection .grid-view .grid-title h2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  border-right: 1px solid #dedede;
+  font-size: 16px;
+  font-weight: 400;
+}
+.collection .grid-view .grid-view_option ul {
+  margin-right: 5px;
+}
+.collection .grid-view .grid-view_option li {
+  position: relative;
+  display: inline-block;
+  margin: 0px 5px;
+}
+.collection .grid-view .grid-view_option li button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0px;
+}
+.collection .grid-view .grid-view_option li button i {
+  color: #707e7a;
+  font-size: 16px;
+}
 .collection .collection-banner {
   position: relative;
   display: flex;
